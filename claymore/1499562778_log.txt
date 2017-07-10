@@ -1,0 +1,1402 @@
+03:12:58:888	b3cd8	args: -epool eu1.ethermine.org:4444 -ewal 0x0266864472C8d5E7cfc47EAB5543268EE86Bc759.worker1 -epsw x -allpools 1 -estale 0 -dpool stratum+tcp://decred.eu.nicehash.com:3354 -dwal 1BDWnsHhJHyWQNDtScrQN1xc1i9VrQ4vAQ -dpsw x -di 0 -dcoin dcr -dcri 60 
+03:12:58:889	b3cd8	
+03:12:58:890	b3cd8	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+03:12:58:890	b3cd8	บ      Claymore's Dual ETH + DCR/SC/LBC/PASC GPU Miner v9.7      บ
+03:12:58:891	b3cd8	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+03:12:58:891	b3cd8	
+03:12:59:093	b3cd8	ETH: 1 pool is specified
+03:12:59:093	b3cd8	Main Ethereum pool is eu1.ethermine.org:4444
+03:12:59:094	b3cd8	DCR: 1 pool is specified
+03:12:59:095	b3cd8	Main Decred pool is decred.eu.nicehash.com:3354
+03:12:59:232	b3cd8	OpenCL platform: Intel(R) OpenCL
+03:12:59:232	b3cd8	OpenCL platform: NVIDIA CUDA
+03:12:59:232	b3cd8	AMD OpenCL platform not found 
+03:12:59:450	b3cd8	CUDA initializing...
+
+03:12:59:450	b3cd8	NVIDIA Cards available: 2 
+03:12:59:450	b3cd8	CUDA Driver Version/Runtime Version: 8.0/8.0
+03:12:59:451	b3cd8	GPU #0: GeForce GTX 1070, 8192 MB available, 15 compute units, capability: 6.1
+
+03:12:59:451	b3cd8	Total cards: 1 
+03:13:03:457	b3cd8	No AMD cards in the list, ADL library will not be used.
+03:13:03:465	b3cd8	NVML version: 8.382.53
+03:13:03:731	b3cd8	DUAL MINING MODE ENABLED: ETHEREUM+DECRED
+03:13:03:732	b3cd8	ETH: eth-proxy stratum mode
+03:13:03:732	b3cd8	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+03:13:03:733	b3cd8	Watchdog enabled
+03:13:03:733	b3cd8	Remote management (READ-ONLY MODE) is enabled on port 3333
+03:13:03:735	b3cd8	
+03:13:03:861	ae040	ETH: Stratum - connecting to 'eu1.ethermine.org' <94.23.36.128> port 4444
+03:13:03:881	ae040	send: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0x0266864472C8d5E7cfc47EAB5543268EE86Bc759.worker1", "x"], "id": 2, "method": "eth_submitLogin"}
+
+03:13:03:881	ae040	ETH: Stratum - Connected (eu1.ethermine.org:4444)
+03:13:04:007	ae040	got 39 bytes
+03:13:04:007	ae040	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+03:13:04:007	ae040	parse packet: 38
+03:13:04:008	ae040	ETH: Authorized
+03:13:04:009	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:13:04:010	ae040	new buf size: 0
+03:13:04:075	ae040	got 248 bytes
+03:13:04:075	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0x94057fe4b07e3cb28a3e9a1489eac8d94d192bd77236b5b5d918f03e208029ac","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf889"]}
+
+03:13:04:075	ae040	parse packet: 247
+03:13:04:076	ae040	ETH: job changed
+03:13:04:076	ae040	new buf size: 0
+03:13:04:144	b3e00	Setting DAG epoch #133...
+03:13:04:200	b0a10	 DCR: Stratum - connecting to 'decred.eu.nicehash.com' <5.153.50.217> port 3354
+03:13:04:201	b0a10	send: {"id": 1, "method": "mining.subscribe", "params": ["dual 1.0"]}
+
+03:13:04:201	b0a10	send: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+03:13:04:201	b0a10	send: {"id": 2, "method": "mining.authorize", "params": ["1BDWnsHhJHyWQNDtScrQN1xc1i9VrQ4vAQ","x"]}
+
+03:13:04:201	b0a10	 DCR: Stratum - Connected (decred.eu.nicehash.com:3354)
+03:13:04:387	b0a10	got 101 bytes
+03:13:04:387	b0a10	buf: {"id":1,"error":null,"result":[["mining.notify","c204f8f809b1f9d4483ba930e6174230"],"b4a21e8421",3]}
+
+03:13:04:387	b0a10	parse packet: 100
+03:13:04:387	b0a10	new buf size: 0
+03:13:04:438	b0a10	got 535 bytes
+03:13:04:438	b0a10	buf: {"id":2,"result":true,"error":null}
+{"id":null,"method":"mining.set_difficulty","params":[4]}
+{"params":["00000017677ae817","6b5b38413c43986617ef1b0bde0620aca4ca9e04c79c1176000000c900000000","74d1f02d46c1a23c087572b0c96587286f6dbfb07ead7f84d2c7ac7a1f1b8bfe888d825b4008ce52d04e98a97640ab7e315ef4e2ed7139c0b5c4b650e0dc52c301002370e4772a390500000002a500003884011a2ea8939e0100000094460200150a00001f83615900000000","04000000",[],"04000000","1a018438","5961831f",true],"id":null,"method":"mining.notify"}
+{"id":5,"result":true,"error":null}
+
+03:13:04:438	b0a10	parse packet: 35
+03:13:04:438	b0a10	 DCR: Authorized
+03:13:04:439	b0a10	remove first packet 499
+03:13:04:439	b0a10	new buf size: 499
+03:13:04:439	b0a10	parse packet: 57
+03:13:04:439	b0a10	remove first packet 441
+03:13:04:439	b0a10	new buf size: 441
+03:13:04:439	b0a10	parse packet: 404
+03:13:04:439	b0a10	remove first packet 36
+03:13:04:439	b0a10	new buf size: 36
+03:13:04:439	b0a10	parse packet: 35
+03:13:04:439	b0a10	new buf size: 0
+03:13:05:849	b3e00	Setting DAG epoch #133 for GPU0
+03:13:05:851	b3e00	Create GPU buffer for GPU0
+03:13:11:614	b3e00	GPU0 DAG creation time - 5691 ms
+03:13:11:615	b3e00	Setting DAG epoch #133 for GPU0 done
+03:13:14:091	ae040	ETH: checking pool connection...
+03:13:14:091	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:13:14:147	ae040	got 248 bytes
+03:13:14:147	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0x94057fe4b07e3cb28a3e9a1489eac8d94d192bd77236b5b5d918f03e208029ac","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf889"]}
+
+03:13:14:147	ae040	parse packet: 247
+03:13:14:148	ae040	ETH: job is the same
+03:13:14:148	ae040	new buf size: 0
+03:13:19:531	ae040	got 248 bytes
+03:13:19:531	ae040	buf: {"id":0,"jsonrpc":"2.0","result":["0xde8054561b1e417db39820b3a32021b0b994c8131616f6de496fae6ab19f8693","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf88a"]}
+
+03:13:19:531	ae040	parse packet: 247
+03:13:19:531	ae040	ETH: job changed
+03:13:19:531	ae040	new buf size: 0
+03:13:19:532	ae040	ETH: 07/09/17-03:13:19 - New job from eu1.ethermine.org:4444
+03:13:19:532	ae040	target: 0x0000000112e0be82 (diff: 4000MH), epoch 133(2.04GB)
+03:13:19:534	ae040	ETH - Total Speed: 29.236 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+03:13:19:535	ae040	ETH: GPU0 29.236 Mh/s
+03:13:19:536	ae040	 DCR - Total Speed: 584.725 Mh/s, Total Shares: 0, Rejected: 0
+03:13:19:536	ae040	 DCR: GPU0 584.725 Mh/s
+03:13:24:094	ae040	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x1bebbff", "0x000000000000000000000000000000000000000000000000000000007c5ac81c"]}
+
+03:13:24:109	ae040	ETH: checking pool connection...
+03:13:24:109	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:13:24:203	ae040	got 39 bytes
+03:13:24:203	ae040	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+03:13:24:203	ae040	parse packet: 38
+03:13:24:203	ae040	new buf size: 0
+03:13:24:266	ae040	got 248 bytes
+03:13:24:266	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0xde8054561b1e417db39820b3a32021b0b994c8131616f6de496fae6ab19f8693","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf88a"]}
+
+03:13:24:266	ae040	parse packet: 247
+03:13:24:266	ae040	ETH: job is the same
+03:13:24:266	ae040	new buf size: 0
+03:13:29:924	afec0	GPU0 t=57C fan=52%
+03:13:29:924	afec0	em hbt: 0, dm hbt: 0, fm hbt: 94, 
+03:13:29:924	afec0	watchdog - thread 0 (gpu0), hb time 156
+03:13:29:924	afec0	watchdog - thread 1 (gpu0), hb time 47
+03:13:32:971	ae040	got 248 bytes
+03:13:32:971	ae040	buf: {"id":0,"jsonrpc":"2.0","result":["0x3749b97b91201123ca8d0dfd93fb2e3e54716097fe4835cfe5ef45f4357a0648","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf88b"]}
+
+03:13:32:971	ae040	parse packet: 247
+03:13:32:971	ae040	ETH: job changed
+03:13:32:971	ae040	new buf size: 0
+03:13:32:971	ae040	ETH: 07/09/17-03:13:32 - New job from eu1.ethermine.org:4444
+03:13:32:971	ae040	target: 0x0000000112e0be82 (diff: 4000MH), epoch 133(2.04GB)
+03:13:32:971	ae040	ETH - Total Speed: 29.221 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+03:13:32:971	ae040	ETH: GPU0 29.221 Mh/s
+03:13:32:971	ae040	 DCR - Total Speed: 584.423 Mh/s, Total Shares: 0, Rejected: 0
+03:13:32:971	ae040	 DCR: GPU0 584.423 Mh/s
+03:13:34:127	ae040	ETH: checking pool connection...
+03:13:34:127	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:13:34:252	ae040	got 248 bytes
+03:13:34:252	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0x3749b97b91201123ca8d0dfd93fb2e3e54716097fe4835cfe5ef45f4357a0648","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf88b"]}
+
+03:13:34:252	ae040	parse packet: 247
+03:13:34:252	ae040	ETH: job is the same
+03:13:34:252	ae040	new buf size: 0
+03:13:35:503	b3e00	DCR: put share nonce bac31ad enonce 21ea28cb
+03:13:35:503	b3e00	DCR round found 1 shares
+03:13:35:518	b0a10	 DCR: 07/09/17-03:13:35 - SHARE FOUND - (GPU 0)
+03:13:35:518	b0a10	send: {"params": ["1BDWnsHhJHyWQNDtScrQN1xc1i9VrQ4vAQ", "00000017677ae817", "ea28cb", "5961831f", "ad31ac0b"], "id": 4, "method": "mining.submit"}
+
+03:13:35:628	b0a10	got 36 bytes
+03:13:35:628	b0a10	buf: {"id":4,"result":true,"error":null}
+
+03:13:35:628	b0a10	parse packet: 35
+03:13:35:628	b0a10	 DCR: Share accepted (109 ms)!
+03:13:35:628	b0a10	new buf size: 0
+03:13:44:113	ae040	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x1c079a5", "0x000000000000000000000000000000000000000000000000000000007c5ac81c"]}
+
+03:13:44:144	ae040	ETH: checking pool connection...
+03:13:44:144	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:13:44:191	ae040	got 39 bytes
+03:13:44:191	ae040	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+03:13:44:191	ae040	parse packet: 38
+03:13:44:191	ae040	new buf size: 0
+03:13:44:269	ae040	got 248 bytes
+03:13:44:269	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0x3749b97b91201123ca8d0dfd93fb2e3e54716097fe4835cfe5ef45f4357a0648","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf88b"]}
+
+03:13:44:269	ae040	parse packet: 247
+03:13:44:269	ae040	ETH: job is the same
+03:13:44:269	ae040	new buf size: 0
+03:13:51:817	b3e00	DCR: put share nonce c854048 enonce 218c29cb
+03:13:51:817	b3e00	DCR round found 1 shares
+03:13:51:832	b0a10	 DCR: 07/09/17-03:13:51 - SHARE FOUND - (GPU 0)
+03:13:51:832	b0a10	send: {"params": ["1BDWnsHhJHyWQNDtScrQN1xc1i9VrQ4vAQ", "00000017677ae817", "8c29cb", "5961831f", "4840850c"], "id": 4, "method": "mining.submit"}
+
+03:13:51:926	b0a10	got 36 bytes
+03:13:51:926	b0a10	buf: {"id":4,"result":true,"error":null}
+
+03:13:51:926	b0a10	parse packet: 35
+03:13:51:926	b0a10	 DCR: Share accepted (94 ms)!
+03:13:51:926	b0a10	new buf size: 0
+03:13:53:739	b3d50	DCR: put share nonce 3b6e238 enonce 219ebd86
+03:13:53:739	b3d50	DCR round found 1 shares
+03:13:53:754	b0a10	 DCR: 07/09/17-03:13:53 - SHARE FOUND - (GPU 0)
+03:13:53:754	b0a10	send: {"params": ["1BDWnsHhJHyWQNDtScrQN1xc1i9VrQ4vAQ", "00000017677ae817", "9ebd86", "5961831f", "38e2b603"], "id": 4, "method": "mining.submit"}
+
+03:13:53:864	b0a10	got 36 bytes
+03:13:53:864	b0a10	buf: {"id":4,"result":true,"error":null}
+
+03:13:53:864	b0a10	parse packet: 35
+03:13:53:864	b0a10	 DCR: Share accepted (110 ms)!
+03:13:53:864	b0a10	new buf size: 0
+03:13:54:161	ae040	ETH: checking pool connection...
+03:13:54:161	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:13:54:239	ae040	got 248 bytes
+03:13:54:239	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0x3749b97b91201123ca8d0dfd93fb2e3e54716097fe4835cfe5ef45f4357a0648","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf88b"]}
+
+03:13:54:239	ae040	parse packet: 247
+03:13:54:239	ae040	ETH: job is the same
+03:13:54:239	ae040	new buf size: 0
+03:13:58:893	b0a10	got 406 bytes
+03:13:58:893	b0a10	buf: {"params":["00000017677b0a94","6b5b38413c43986617ef1b0bde0620aca4ca9e04c79c1176000000c900000000","74d1f02d46c1a23c087572b0c96587286f6dbfb07ead7f84d2c7ac7a1f1b8bfe888d825b4008ce52d04e98a97640ab7e315ef4e2ed7139c0b5c4b650e0dc52c301002370e4772a390500000002a500003884011a2ea8939e0100000094460200150a00005683615900000000","04000000",[],"04000000","1a018438","59618356",false],"id":null,"method":"mining.notify"}
+
+03:13:58:893	b0a10	parse packet: 405
+03:13:58:893	b0a10	new buf size: 0
+03:13:58:893	b0a10	 DCR: 07/09/17-03:13:58 - New job from decred.eu.nicehash.com:3354
+03:13:58:893	b0a10	target: 0x000000003fffc000 (diff: 17GH), block #149140
+03:14:01:087	b3e00	DCR: put share nonce 7d651a3 enonce 2112f868
+03:14:01:087	b3e00	DCR round found 1 shares
+03:14:01:103	b0a10	 DCR: 07/09/17-03:14:01 - SHARE FOUND - (GPU 0)
+03:14:01:103	b0a10	send: {"params": ["1BDWnsHhJHyWQNDtScrQN1xc1i9VrQ4vAQ", "00000017677b0a94", "12f868", "59618356", "a351d607"], "id": 4, "method": "mining.submit"}
+
+03:14:01:259	b0a10	got 36 bytes
+03:14:01:259	b0a10	buf: {"id":4,"result":true,"error":null}
+
+03:14:01:259	b0a10	parse packet: 35
+03:14:01:259	b0a10	 DCR: Share accepted (156 ms)!
+03:14:01:259	b0a10	new buf size: 0
+03:14:02:743	afec0	GPU0 t=57C fan=52%
+03:14:02:743	afec0	em hbt: 0, dm hbt: 0, fm hbt: 94, 
+03:14:02:743	afec0	watchdog - thread 0 (gpu0), hb time 157
+03:14:02:743	afec0	watchdog - thread 1 (gpu0), hb time 47
+03:14:04:127	ae040	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x1bf6446", "0x000000000000000000000000000000000000000000000000000000007c5ac81c"]}
+
+03:14:04:174	ae040	ETH: checking pool connection...
+03:14:04:174	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:14:04:205	ae040	got 39 bytes
+03:14:04:205	ae040	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+03:14:04:205	ae040	parse packet: 38
+03:14:04:205	ae040	new buf size: 0
+03:14:04:284	ae040	got 248 bytes
+03:14:04:284	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0x3749b97b91201123ca8d0dfd93fb2e3e54716097fe4835cfe5ef45f4357a0648","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf88b"]}
+
+03:14:04:284	ae040	parse packet: 247
+03:14:04:284	ae040	ETH: job is the same
+03:14:04:284	ae040	new buf size: 0
+03:14:14:194	ae040	ETH: checking pool connection...
+03:14:14:194	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:14:14:272	ae040	got 248 bytes
+03:14:14:272	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0x3749b97b91201123ca8d0dfd93fb2e3e54716097fe4835cfe5ef45f4357a0648","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf88b"]}
+
+03:14:14:272	ae040	parse packet: 247
+03:14:14:272	ae040	ETH: job is the same
+03:14:14:272	ae040	new buf size: 0
+03:14:22:636	b3e00	DCR: put share nonce 7735094 enonce 21e8f868
+03:14:22:636	b3e00	DCR round found 1 shares
+03:14:22:651	b0a10	 DCR: 07/09/17-03:14:22 - SHARE FOUND - (GPU 0)
+03:14:22:651	b0a10	send: {"params": ["1BDWnsHhJHyWQNDtScrQN1xc1i9VrQ4vAQ", "00000017677b0a94", "e8f868", "59618356", "94507307"], "id": 4, "method": "mining.submit"}
+
+03:14:22:792	b0a10	got 36 bytes
+03:14:22:792	b0a10	buf: {"id":4,"result":true,"error":null}
+
+03:14:22:792	b0a10	parse packet: 35
+03:14:22:792	b0a10	 DCR: Share accepted (140 ms)!
+03:14:22:792	b0a10	new buf size: 0
+03:14:24:151	ae040	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x1bd468f", "0x000000000000000000000000000000000000000000000000000000007c5ac81c"]}
+
+03:14:24:214	ae040	ETH: checking pool connection...
+03:14:24:214	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:14:24:230	ae040	got 39 bytes
+03:14:24:230	ae040	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+03:14:24:230	ae040	parse packet: 38
+03:14:24:230	ae040	new buf size: 0
+03:14:24:339	ae040	got 248 bytes
+03:14:24:339	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0xdfb68a7ebaba9f86e4892444a6275476fb169609516d7e3833214727172a6e09","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf88c"]}
+
+03:14:24:339	ae040	parse packet: 247
+03:14:24:339	ae040	ETH: job changed
+03:14:24:339	ae040	new buf size: 0
+03:14:24:339	ae040	ETH: 07/09/17-03:14:24 - New job from eu1.ethermine.org:4444
+03:14:24:339	ae040	target: 0x0000000112e0be82 (diff: 4000MH), epoch 133(2.04GB)
+03:14:24:339	ae040	ETH - Total Speed: 29.323 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:01
+03:14:24:339	ae040	ETH: GPU0 29.323 Mh/s
+03:14:24:339	ae040	 DCR - Total Speed: 586.451 Mh/s, Total Shares: 5, Rejected: 0
+03:14:24:339	ae040	 DCR: GPU0 586.451 Mh/s
+03:14:24:417	ae040	got 248 bytes
+03:14:24:417	ae040	buf: {"id":0,"jsonrpc":"2.0","result":["0xdfb68a7ebaba9f86e4892444a6275476fb169609516d7e3833214727172a6e09","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf88c"]}
+
+03:14:24:417	ae040	parse packet: 247
+03:14:24:417	ae040	ETH: job is the same
+03:14:24:417	ae040	new buf size: 0
+03:14:34:224	ae040	ETH: checking pool connection...
+03:14:34:224	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:14:34:349	ae040	got 248 bytes
+03:14:34:349	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0xdfb68a7ebaba9f86e4892444a6275476fb169609516d7e3833214727172a6e09","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf88c"]}
+
+03:14:34:349	ae040	parse packet: 247
+03:14:34:349	ae040	ETH: job is the same
+03:14:34:349	ae040	new buf size: 0
+03:14:35:536	afec0	GPU0 t=57C fan=52%
+03:14:35:536	afec0	em hbt: 0, dm hbt: 0, fm hbt: 78, 
+03:14:35:536	afec0	watchdog - thread 0 (gpu0), hb time 109
+03:14:35:536	afec0	watchdog - thread 1 (gpu0), hb time 15
+03:14:44:157	ae040	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x1bd922e", "0x000000000000000000000000000000000000000000000000000000007c5ac81c"]}
+
+03:14:44:235	ae040	got 39 bytes
+03:14:44:235	ae040	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+03:14:44:235	ae040	parse packet: 38
+03:14:44:235	ae040	new buf size: 0
+03:14:44:235	ae040	ETH: checking pool connection...
+03:14:44:235	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:14:44:313	ae040	got 248 bytes
+03:14:44:313	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0xdfb68a7ebaba9f86e4892444a6275476fb169609516d7e3833214727172a6e09","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf88c"]}
+
+03:14:44:313	ae040	parse packet: 247
+03:14:44:313	ae040	ETH: job is the same
+03:14:44:313	ae040	new buf size: 0
+03:14:45:751	b0a10	got 71 bytes
+03:14:45:751	b0a10	buf: {"id":null,"method":"mining.set_extranonce","params":["17fffe71b8",7]}
+
+03:14:45:751	b0a10	parse packet: 70
+03:14:45:751	b0a10	new buf size: 0
+03:14:45:829	b0a10	got 463 bytes
+03:14:45:829	b0a10	buf: {"id":null,"method":"mining.set_difficulty","params":[4]}
+{"params":["00000017677b49cb","6b5b38413c43986617ef1b0bde0620aca4ca9e04c79c1176000000c900000000","4350cf0808befe22ebdf2649dd85b81d582c000e3d62a37935d5b5e41cd90c3e1c9f6ebe80e4648924c8b66f52994318c5d9c16dd097fd3c47dee239e19704d201002370e4772a390500000002a500003884011a2ea8939e0100000094460200150a00005883615900000000","04000000",[],"04000000","1a018438","59618358",true],"id":null,"method":"mining.notify"}
+
+03:14:45:829	b0a10	parse packet: 57
+03:14:45:829	b0a10	remove first packet 405
+03:14:45:829	b0a10	new buf size: 405
+03:14:45:829	b0a10	parse packet: 404
+03:14:45:829	b0a10	new buf size: 0
+03:14:45:829	b0a10	 DCR: 07/09/17-03:14:45 - New job from decred.eu.nicehash.com:3354
+03:14:45:829	b0a10	target: 0x000000003fffc000 (diff: 17GH), block #149140
+03:14:48:313	b3d50	DCR: put share nonce 9159061 enonce b816507e
+03:14:48:313	b3d50	DCR round found 1 shares
+03:14:48:329	b0a10	 DCR: 07/09/17-03:14:48 - SHARE FOUND - (GPU 0)
+03:14:48:329	b0a10	send: {"params": ["1BDWnsHhJHyWQNDtScrQN1xc1i9VrQ4vAQ", "00000017677b49cb", "16507e00000000", "59618358", "61901509"], "id": 4, "method": "mining.submit"}
+
+03:14:48:438	b0a10	got 36 bytes
+03:14:48:438	b0a10	buf: {"id":4,"result":true,"error":null}
+
+03:14:48:438	b0a10	parse packet: 35
+03:14:48:438	b0a10	 DCR: Share accepted (110 ms)!
+03:14:48:438	b0a10	new buf size: 0
+03:14:54:251	ae040	ETH: checking pool connection...
+03:14:54:251	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:14:54:329	ae040	got 248 bytes
+03:14:54:329	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0xdfb68a7ebaba9f86e4892444a6275476fb169609516d7e3833214727172a6e09","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf88c"]}
+
+03:14:54:329	ae040	parse packet: 247
+03:14:54:329	ae040	ETH: job is the same
+03:14:54:329	ae040	new buf size: 0
+03:14:54:923	b0a10	got 406 bytes
+03:14:54:923	b0a10	buf: {"params":["00000017677b82ae","6b5b38413c43986617ef1b0bde0620aca4ca9e04c79c1176000000c900000000","4350cf0808befe22ebdf2649dd85b81d582c000e3d62a37935d5b5e41cd90c3e1c9f6ebe80e4648924c8b66f52994318c5d9c16dd097fd3c47dee239e19704d201002370e4772a390500000002a500003884011a2ea8939e0100000094460200150a00008f83615900000000","04000000",[],"04000000","1a018438","5961838f",false],"id":null,"method":"mining.notify"}
+
+03:14:54:923	b0a10	parse packet: 405
+03:14:54:923	b0a10	new buf size: 0
+03:14:54:923	b0a10	 DCR: 07/09/17-03:14:54 - New job from decred.eu.nicehash.com:3354
+03:14:54:923	b0a10	target: 0x000000003fffc000 (diff: 17GH), block #149140
+03:15:04:177	ae040	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x1c022c0", "0x000000000000000000000000000000000000000000000000000000007c5ac81c"]}
+
+03:15:04:255	ae040	got 39 bytes
+03:15:04:255	ae040	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+03:15:04:255	ae040	parse packet: 38
+03:15:04:255	ae040	new buf size: 0
+03:15:04:271	ae040	ETH: checking pool connection...
+03:15:04:271	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:15:04:349	ae040	got 248 bytes
+03:15:04:349	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0xdfb68a7ebaba9f86e4892444a6275476fb169609516d7e3833214727172a6e09","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf88c"]}
+
+03:15:04:349	ae040	parse packet: 247
+03:15:04:349	ae040	ETH: job is the same
+03:15:04:349	ae040	new buf size: 0
+03:15:06:497	b3e00	ETH: put share nonce b5ba801830de6abe
+03:15:06:497	b3e00	ETH round found 1 shares
+03:15:06:512	ae040	ETH: 07/09/17-03:15:06 - SHARE FOUND - (GPU 0)
+03:15:06:512	ae040	send: {"id":4,"method":"eth_submitWork","params":["0xb5ba801830de6abe","0xdfb68a7ebaba9f86e4892444a6275476fb169609516d7e3833214727172a6e09","0x03191e03532e2fc5e59381804c4ac9fd7cf63b8cf96e1eea223678fd4ba98231"]}
+
+03:15:06:591	ae040	got 39 bytes
+03:15:06:591	ae040	buf: {"id":4,"jsonrpc":"2.0","result":true}
+
+03:15:06:591	ae040	parse packet: 38
+03:15:06:591	ae040	ETH: Share accepted (78 ms)!
+03:15:06:591	ae040	new buf size: 0
+03:15:08:325	afec0	GPU0 t=58C fan=52%
+03:15:08:325	afec0	em hbt: 0, dm hbt: 0, fm hbt: 78, 
+03:15:08:325	afec0	watchdog - thread 0 (gpu0), hb time 125
+03:15:08:325	afec0	watchdog - thread 1 (gpu0), hb time 31
+03:15:14:279	ae040	ETH: checking pool connection...
+03:15:14:279	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:15:14:357	ae040	got 248 bytes
+03:15:14:357	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0xdfb68a7ebaba9f86e4892444a6275476fb169609516d7e3833214727172a6e09","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf88c"]}
+
+03:15:14:357	ae040	parse packet: 247
+03:15:14:357	ae040	ETH: job is the same
+03:15:14:357	ae040	new buf size: 0
+03:15:24:196	ae040	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x1bea8b3", "0x000000000000000000000000000000000000000000000000000000007c5ac81c"]}
+
+03:15:24:298	ae040	ETH: checking pool connection...
+03:15:24:298	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:15:24:314	ae040	got 39 bytes
+03:15:24:314	ae040	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+03:15:24:314	ae040	parse packet: 38
+03:15:24:314	ae040	new buf size: 0
+03:15:24:376	ae040	got 248 bytes
+03:15:24:376	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0xdfb68a7ebaba9f86e4892444a6275476fb169609516d7e3833214727172a6e09","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf88c"]}
+
+03:15:24:376	ae040	parse packet: 247
+03:15:24:376	ae040	ETH: job is the same
+03:15:24:376	ae040	new buf size: 0
+03:15:29:298	ae040	got 248 bytes
+03:15:29:298	ae040	buf: {"id":0,"jsonrpc":"2.0","result":["0x4f9d4415dd796d6a0b39b09d6c49280277970764c627376e3352aa3e516dd29f","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf88d"]}
+
+03:15:29:298	ae040	parse packet: 247
+03:15:29:298	ae040	ETH: job changed
+03:15:29:298	ae040	new buf size: 0
+03:15:29:298	ae040	ETH: 07/09/17-03:15:29 - New job from eu1.ethermine.org:4444
+03:15:29:298	ae040	target: 0x0000000112e0be82 (diff: 4000MH), epoch 133(2.04GB)
+03:15:29:298	ae040	ETH - Total Speed: 29.302 Mh/s, Total Shares: 1, Rejected: 0, Time: 00:02
+03:15:29:298	ae040	ETH: GPU0 29.302 Mh/s
+03:15:29:298	ae040	 DCR - Total Speed: 586.049 Mh/s, Total Shares: 6, Rejected: 0
+03:15:29:298	ae040	 DCR: GPU0 586.049 Mh/s
+03:15:29:345	b3d50	DCR: put share nonce c58c11e enonce b854ef72
+03:15:29:345	b3d50	DCR round found 1 shares
+03:15:29:361	b0a10	 DCR: 07/09/17-03:15:29 - SHARE FOUND - (GPU 0)
+03:15:29:361	b0a10	send: {"params": ["1BDWnsHhJHyWQNDtScrQN1xc1i9VrQ4vAQ", "00000017677b82ae", "54ef7200000000", "5961838f", "1ec1580c"], "id": 4, "method": "mining.submit"}
+
+03:15:29:533	b0a10	got 36 bytes
+03:15:29:533	b0a10	buf: {"id":4,"result":true,"error":null}
+
+03:15:29:533	b0a10	parse packet: 35
+03:15:29:533	b0a10	 DCR: Share accepted (171 ms)!
+03:15:29:533	b0a10	new buf size: 0
+03:15:34:320	ae040	ETH: checking pool connection...
+03:15:34:320	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:15:34:445	ae040	got 248 bytes
+03:15:34:445	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0x4f9d4415dd796d6a0b39b09d6c49280277970764c627376e3352aa3e516dd29f","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf88d"]}
+
+03:15:34:445	ae040	parse packet: 247
+03:15:34:445	ae040	ETH: job is the same
+03:15:34:445	ae040	new buf size: 0
+03:15:41:039	b0a10	got 405 bytes
+03:15:41:039	b0a10	buf: {"params":["00000017677b9a55","6b5b38413c43986617ef1b0bde0620aca4ca9e04c79c1176000000c900000000","2e26848c5b1ddf541832268c0768b6c74d4f4f8adb5d8aefc9b3555737e594fc1c9f6ebe80e4648924c8b66f52994318c5d9c16dd097fd3c47dee239e19704d201002370e4772a390500000002a500003884011a2ea8939e0100000094460200150a0000bd83615900000000","04000000",[],"04000000","1a018438","596183bd",true],"id":null,"method":"mining.notify"}
+
+03:15:41:039	b0a10	parse packet: 404
+03:15:41:039	b0a10	new buf size: 0
+03:15:41:039	b0a10	 DCR: 07/09/17-03:15:41 - New job from decred.eu.nicehash.com:3354
+03:15:41:039	b0a10	target: 0x000000003fffc000 (diff: 17GH), block #149140
+03:15:41:133	afec0	GPU0 t=57C fan=52%
+03:15:41:133	afec0	em hbt: 0, dm hbt: 0, fm hbt: 78, 
+03:15:41:133	afec0	watchdog - thread 0 (gpu0), hb time 109
+03:15:41:133	afec0	watchdog - thread 1 (gpu0), hb time 15
+03:15:43:039	b0a10	got 405 bytes
+03:15:43:039	b0a10	buf: {"params":["00000017677bfd10","11d6836b64a9c74640d4b7164a82989b402e26a696fa7ee10000007500000000","8b0aa7978fc201c85f1607029ad96a6816c43e029e67a2f16046204fd70fc92e18a66103d2e90bcdf729599286f22c78bdecb75566b30e3294477e824456f04c01001ef0321b8a190500000002a500003884011a2ea8939e01000000954602001b090000bf83615900000000","04000000",[],"04000000","1a018438","596183bf",true],"id":null,"method":"mining.notify"}
+
+03:15:43:039	b0a10	parse packet: 404
+03:15:43:039	b0a10	new buf size: 0
+03:15:43:039	b0a10	 DCR: 07/09/17-03:15:43 - New job from decred.eu.nicehash.com:3354
+03:15:43:039	b0a10	target: 0x000000003fffc000 (diff: 17GH), block #149141
+03:15:43:583	ae040	got 248 bytes
+03:15:43:583	ae040	buf: {"id":0,"jsonrpc":"2.0","result":["0xeb8f369dd4c6b4b567084e0ce394363ec188a7cdaeeddef47ffc2cda03d9e7a1","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf88e"]}
+
+03:15:43:583	ae040	parse packet: 247
+03:15:43:583	ae040	ETH: job changed
+03:15:43:583	ae040	new buf size: 0
+03:15:43:583	ae040	ETH: 07/09/17-03:15:43 - New job from eu1.ethermine.org:4444
+03:15:43:583	ae040	target: 0x0000000112e0be82 (diff: 4000MH), epoch 133(2.04GB)
+03:15:43:583	ae040	ETH - Total Speed: 29.373 Mh/s, Total Shares: 1, Rejected: 0, Time: 00:02
+03:15:43:583	ae040	ETH: GPU0 29.373 Mh/s
+03:15:43:583	ae040	 DCR - Total Speed: 587.462 Mh/s, Total Shares: 7, Rejected: 0
+03:15:43:583	ae040	 DCR: GPU0 587.462 Mh/s
+03:15:44:208	ae040	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x1c0107a", "0x000000000000000000000000000000000000000000000000000000007c5ac81c"]}
+
+03:15:44:318	ae040	got 39 bytes
+03:15:44:318	ae040	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+03:15:44:318	ae040	parse packet: 38
+03:15:44:318	ae040	new buf size: 0
+03:15:44:333	ae040	ETH: checking pool connection...
+03:15:44:333	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:15:44:411	ae040	got 248 bytes
+03:15:44:411	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0xeb8f369dd4c6b4b567084e0ce394363ec188a7cdaeeddef47ffc2cda03d9e7a1","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf88e"]}
+
+03:15:44:411	ae040	parse packet: 247
+03:15:44:411	ae040	ETH: job is the same
+03:15:44:411	ae040	new buf size: 0
+03:15:47:037	b0a10	got 405 bytes
+03:15:47:037	b0a10	buf: {"params":["00000017677c4794","11d6836b64a9c74640d4b7164a82989b402e26a696fa7ee10000007500000000","71ae94e9ae8c7a15c1b1b6dcbe6eaf667047e54528c8e09b810cc314b253556ab7ed12eecf175618f9b7c93df548f24d96fa230bdf228393d6a00fddbc70749301001ef0321b8a190500000002a500003884011a2ea8939e0100000095460200df0a0000c383615900000000","04000000",[],"04000000","1a018438","596183c3",true],"id":null,"method":"mining.notify"}
+
+03:15:47:037	b0a10	parse packet: 404
+03:15:47:037	b0a10	new buf size: 0
+03:15:47:037	b0a10	 DCR: 07/09/17-03:15:47 - New job from decred.eu.nicehash.com:3354
+03:15:47:037	b0a10	target: 0x000000003fffc000 (diff: 17GH), block #149141
+03:15:54:352	ae040	ETH: checking pool connection...
+03:15:54:352	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:15:54:430	ae040	got 248 bytes
+03:15:54:430	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0xeb8f369dd4c6b4b567084e0ce394363ec188a7cdaeeddef47ffc2cda03d9e7a1","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf88e"]}
+
+03:15:54:430	ae040	parse packet: 247
+03:15:54:430	ae040	ETH: job is the same
+03:15:54:430	ae040	new buf size: 0
+03:16:04:117	b0a10	got 405 bytes
+03:16:04:117	b0a10	buf: {"params":["00000017677c8a0b","11d6836b64a9c74640d4b7164a82989b402e26a696fa7ee10000007500000000","fcc7645ddd9b18711f4c433345a8ec391abbb5b8755829bc01ac4760c5df8785b7ed12eecf175618f9b7c93df548f24d96fa230bdf228393d6a00fddbc70749301001ef0321b8a190500000002a500003884011a2ea8939e0100000095460200d10d0000d483615900000000","04000000",[],"04000000","1a018438","596183d4",true],"id":null,"method":"mining.notify"}
+
+03:16:04:117	b0a10	parse packet: 404
+03:16:04:117	b0a10	new buf size: 0
+03:16:04:117	b0a10	 DCR: 07/09/17-03:16:04 - New job from decred.eu.nicehash.com:3354
+03:16:04:117	b0a10	target: 0x000000003fffc000 (diff: 17GH), block #149141
+03:16:04:226	ae040	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x1bd6626", "0x000000000000000000000000000000000000000000000000000000007c5ac81c"]}
+
+03:16:04:305	ae040	got 39 bytes
+03:16:04:305	ae040	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+03:16:04:305	ae040	parse packet: 38
+03:16:04:305	ae040	new buf size: 0
+03:16:04:367	ae040	ETH: checking pool connection...
+03:16:04:367	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:16:04:383	b0a10	got 58 bytes
+03:16:04:383	b0a10	buf: {"id":null,"method":"mining.set_difficulty","params":[2]}
+
+03:16:04:383	b0a10	parse packet: 57
+03:16:04:383	b0a10	new buf size: 0
+03:16:04:445	ae040	got 248 bytes
+03:16:04:445	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0xeb8f369dd4c6b4b567084e0ce394363ec188a7cdaeeddef47ffc2cda03d9e7a1","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf88e"]}
+
+03:16:04:445	ae040	parse packet: 247
+03:16:04:445	ae040	ETH: job is the same
+03:16:04:445	ae040	new buf size: 0
+03:16:13:942	afec0	GPU0 t=58C fan=52%
+03:16:13:942	afec0	em hbt: 0, dm hbt: 0, fm hbt: 78, 
+03:16:13:942	afec0	watchdog - thread 0 (gpu0), hb time 94
+03:16:13:942	afec0	watchdog - thread 1 (gpu0), hb time 188
+03:16:14:380	ae040	ETH: checking pool connection...
+03:16:14:380	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:16:14:458	ae040	got 248 bytes
+03:16:14:458	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0xeb8f369dd4c6b4b567084e0ce394363ec188a7cdaeeddef47ffc2cda03d9e7a1","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf88e"]}
+
+03:16:14:458	ae040	parse packet: 247
+03:16:14:458	ae040	ETH: job is the same
+03:16:14:458	ae040	new buf size: 0
+03:16:21:893	ae040	got 248 bytes
+03:16:21:893	ae040	buf: {"id":0,"jsonrpc":"2.0","result":["0xc3c7cf47a27b25f1c292dbe178ddbc8f258114a7b734f67af8e861be85a75b98","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf88f"]}
+
+03:16:21:893	ae040	parse packet: 247
+03:16:21:893	ae040	ETH: job changed
+03:16:21:893	ae040	new buf size: 0
+03:16:21:893	ae040	ETH: 07/09/17-03:16:21 - New job from eu1.ethermine.org:4444
+03:16:21:893	ae040	target: 0x0000000112e0be82 (diff: 4000MH), epoch 133(2.04GB)
+03:16:21:893	ae040	ETH - Total Speed: 29.254 Mh/s, Total Shares: 1, Rejected: 0, Time: 00:03
+03:16:21:893	ae040	ETH: GPU0 29.254 Mh/s
+03:16:21:893	ae040	 DCR - Total Speed: 585.084 Mh/s, Total Shares: 7, Rejected: 0
+03:16:21:893	ae040	 DCR: GPU0 585.084 Mh/s
+03:16:24:237	ae040	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x1bf3905", "0x000000000000000000000000000000000000000000000000000000007c5ac81c"]}
+
+03:16:24:315	ae040	got 39 bytes
+03:16:24:315	ae040	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+03:16:24:315	ae040	parse packet: 38
+03:16:24:315	ae040	new buf size: 0
+03:16:24:394	ae040	ETH: checking pool connection...
+03:16:24:394	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:16:24:472	ae040	got 248 bytes
+03:16:24:472	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0xc3c7cf47a27b25f1c292dbe178ddbc8f258114a7b734f67af8e861be85a75b98","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf88f"]}
+
+03:16:24:472	ae040	parse packet: 247
+03:16:24:472	ae040	ETH: job is the same
+03:16:24:472	ae040	new buf size: 0
+03:16:27:891	ae040	got 248 bytes
+03:16:27:891	ae040	buf: {"id":0,"jsonrpc":"2.0","result":["0x7eb5bdc0ff491127104c2833d427e3886bd8cdfc6a53fffb82418902faf3b4c4","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf890"]}
+
+03:16:27:891	ae040	parse packet: 247
+03:16:27:891	ae040	ETH: job changed
+03:16:27:891	ae040	new buf size: 0
+03:16:27:891	ae040	ETH: 07/09/17-03:16:27 - New job from eu1.ethermine.org:4444
+03:16:27:891	ae040	target: 0x0000000112e0be82 (diff: 4000MH), epoch 133(2.04GB)
+03:16:27:891	ae040	ETH - Total Speed: 29.337 Mh/s, Total Shares: 1, Rejected: 0, Time: 00:03
+03:16:27:891	ae040	ETH: GPU0 29.337 Mh/s
+03:16:27:891	ae040	 DCR - Total Speed: 586.731 Mh/s, Total Shares: 7, Rejected: 0
+03:16:27:891	ae040	 DCR: GPU0 586.731 Mh/s
+03:16:33:685	ae040	got 248 bytes
+03:16:33:685	ae040	buf: {"id":0,"jsonrpc":"2.0","result":["0x854672578b6778858ff96244474c388bd7fea2837696ea9f53456eb75f3b8d19","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf891"]}
+
+03:16:33:685	ae040	parse packet: 247
+03:16:33:685	ae040	ETH: job changed
+03:16:33:685	ae040	new buf size: 0
+03:16:33:685	ae040	ETH: 07/09/17-03:16:33 - New job from eu1.ethermine.org:4444
+03:16:33:685	ae040	target: 0x0000000112e0be82 (diff: 4000MH), epoch 133(2.04GB)
+03:16:33:685	ae040	ETH - Total Speed: 29.194 Mh/s, Total Shares: 1, Rejected: 0, Time: 00:03
+03:16:33:685	ae040	ETH: GPU0 29.194 Mh/s
+03:16:33:685	ae040	 DCR - Total Speed: 583.880 Mh/s, Total Shares: 7, Rejected: 0
+03:16:33:685	ae040	 DCR: GPU0 583.880 Mh/s
+03:16:34:404	ae040	ETH: checking pool connection...
+03:16:34:404	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:16:34:482	ae040	got 248 bytes
+03:16:34:482	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0x854672578b6778858ff96244474c388bd7fea2837696ea9f53456eb75f3b8d19","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf891"]}
+
+03:16:34:482	ae040	parse packet: 247
+03:16:34:482	ae040	ETH: job is the same
+03:16:34:482	ae040	new buf size: 0
+03:16:44:186	b0a10	got 71 bytes
+03:16:44:186	b0a10	buf: {"id":null,"method":"mining.set_extranonce","params":["e889b53c28",3]}
+
+03:16:44:186	b0a10	parse packet: 70
+03:16:44:186	b0a10	new buf size: 0
+03:16:44:248	b0a10	got 463 bytes
+03:16:44:248	ae040	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x1bf8e6c", "0x000000000000000000000000000000000000000000000000000000007c5ac81c"]}
+
+03:16:44:248	b0a10	buf: {"id":null,"method":"mining.set_difficulty","params":[2]}
+{"params":["00000017677c97f9","11d6836b64a9c74640d4b7164a82989b402e26a696fa7ee10000007500000000","ef44d95132b83db9bd41da1f0e9d578bc8c6dcd44dc3ae6ac9fbb745bfb8aedb2f803c2f3f54771f5261bb81b6c2c36290b3612c097ad4664da77884223e7e2001001ef0321b8a190500000002a500003884011a2ea8939e0100000095460200be110000d483615900000000","04000000",[],"04000000","1a018438","596183d4",true],"id":null,"method":"mining.notify"}
+
+03:16:44:248	b0a10	parse packet: 57
+03:16:44:248	b0a10	remove first packet 405
+03:16:44:248	b0a10	new buf size: 405
+03:16:44:248	b0a10	parse packet: 404
+03:16:44:248	b0a10	new buf size: 0
+03:16:44:249	b0a10	 DCR: 07/09/17-03:16:44 - New job from decred.eu.nicehash.com:3354
+03:16:44:249	b0a10	target: 0x000000007fff8000 (diff: 8590MH), block #149141
+03:16:44:325	ae040	got 39 bytes
+03:16:44:325	ae040	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+03:16:44:325	ae040	parse packet: 38
+03:16:44:325	ae040	new buf size: 0
+03:16:44:419	ae040	ETH: checking pool connection...
+03:16:44:419	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:16:44:496	ae040	got 248 bytes
+03:16:44:496	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0x854672578b6778858ff96244474c388bd7fea2837696ea9f53456eb75f3b8d19","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf891"]}
+
+03:16:44:496	ae040	parse packet: 247
+03:16:44:497	ae040	ETH: job is the same
+03:16:44:497	ae040	new buf size: 0
+03:16:46:747	afec0	GPU0 t=57C fan=52%
+03:16:46:747	afec0	em hbt: 0, dm hbt: 0, fm hbt: 109, 
+03:16:46:747	afec0	watchdog - thread 0 (gpu0), hb time 62
+03:16:46:747	afec0	watchdog - thread 1 (gpu0), hb time 172
+03:16:47:598	ae040	got 248 bytes
+03:16:47:598	ae040	buf: {"id":0,"jsonrpc":"2.0","result":["0x691ce00ccbf5941c6ddf75815b7633168691fd17c5df10c53ee9e9a8cfd7be69","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf892"]}
+
+03:16:47:598	ae040	parse packet: 247
+03:16:47:598	ae040	ETH: job changed
+03:16:47:598	ae040	new buf size: 0
+03:16:47:598	ae040	ETH: 07/09/17-03:16:47 - New job from eu1.ethermine.org:4444
+03:16:47:598	ae040	target: 0x0000000112e0be82 (diff: 4000MH), epoch 133(2.04GB)
+03:16:47:598	ae040	ETH - Total Speed: 29.306 Mh/s, Total Shares: 1, Rejected: 0, Time: 00:03
+03:16:47:598	ae040	ETH: GPU0 29.306 Mh/s
+03:16:47:598	ae040	 DCR - Total Speed: 586.125 Mh/s, Total Shares: 7, Rejected: 0
+03:16:47:598	ae040	 DCR: GPU0 586.125 Mh/s
+03:16:54:442	ae040	ETH: checking pool connection...
+03:16:54:442	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:16:54:567	ae040	got 248 bytes
+03:16:54:567	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0x691ce00ccbf5941c6ddf75815b7633168691fd17c5df10c53ee9e9a8cfd7be69","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf892"]}
+
+03:16:54:567	ae040	parse packet: 247
+03:16:54:567	ae040	ETH: job is the same
+03:16:54:567	ae040	new buf size: 0
+03:16:58:661	b0a10	got 406 bytes
+03:16:58:661	b0a10	buf: {"params":["00000017677cb01e","11d6836b64a9c74640d4b7164a82989b402e26a696fa7ee10000007500000000","ef44d95132b83db9bd41da1f0e9d578bc8c6dcd44dc3ae6ac9fbb745bfb8aedb2f803c2f3f54771f5261bb81b6c2c36290b3612c097ad4664da77884223e7e2001001ef0321b8a190500000002a500003884011a2ea8939e0100000095460200be1100000b84615900000000","04000000",[],"04000000","1a018438","5961840b",false],"id":null,"method":"mining.notify"}
+
+03:16:58:661	b0a10	parse packet: 405
+03:16:58:661	b0a10	new buf size: 0
+03:16:58:661	b0a10	 DCR: 07/09/17-03:16:58 - New job from decred.eu.nicehash.com:3354
+03:16:58:661	b0a10	target: 0x000000007fff8000 (diff: 8590MH), block #149141
+03:17:01:693	b0a10	got 405 bytes
+03:17:01:693	b0a10	buf: {"params":["00000017677cdc73","11d6836b64a9c74640d4b7164a82989b402e26a696fa7ee10000007500000000","08f8bacb006913aef428598198ebc6aa9b649b739c84a083713b53a1af19f8edb7ed12eecf175618f9b7c93df548f24d96fa230bdf228393d6a00fddbc70749301001ef0321b8a190500000002a500003884011a2ea8939e0100000095460200ba1200000e84615900000000","04000000",[],"04000000","1a018438","5961840e",true],"id":null,"method":"mining.notify"}
+
+03:17:01:693	b0a10	parse packet: 404
+03:17:01:693	b0a10	new buf size: 0
+03:17:01:693	b0a10	 DCR: 07/09/17-03:17:01 - New job from decred.eu.nicehash.com:3354
+03:17:01:693	b0a10	target: 0x000000007fff8000 (diff: 8590MH), block #149141
+03:17:04:271	ae040	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x1c09767", "0x000000000000000000000000000000000000000000000000000000007c5ac81c"]}
+
+03:17:04:349	ae040	got 39 bytes
+03:17:04:349	ae040	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+03:17:04:349	ae040	parse packet: 38
+03:17:04:349	ae040	new buf size: 0
+03:17:04:459	ae040	ETH: checking pool connection...
+03:17:04:459	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:17:04:537	ae040	got 248 bytes
+03:17:04:537	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0x691ce00ccbf5941c6ddf75815b7633168691fd17c5df10c53ee9e9a8cfd7be69","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf892"]}
+
+03:17:04:537	ae040	parse packet: 247
+03:17:04:537	ae040	ETH: job is the same
+03:17:04:537	ae040	new buf size: 0
+03:17:09:037	b3d50	DCR: put share nonce 7bbc2d1 enonce 2846e8d3
+03:17:09:037	b3d50	DCR round found 1 shares
+03:17:09:053	b0a10	 DCR: 07/09/17-03:17:09 - SHARE FOUND - (GPU 0)
+03:17:09:053	b0a10	send: {"params": ["1BDWnsHhJHyWQNDtScrQN1xc1i9VrQ4vAQ", "00000017677cdc73", "46e8d3", "5961840e", "d1c2bb07"], "id": 4, "method": "mining.submit"}
+
+03:17:09:162	b0a10	got 36 bytes
+03:17:09:162	b0a10	buf: {"id":4,"result":true,"error":null}
+
+03:17:09:162	b0a10	parse packet: 35
+03:17:09:162	b0a10	 DCR: Share accepted (109 ms)!
+03:17:09:162	b0a10	new buf size: 0
+03:17:10:537	ae040	got 248 bytes
+03:17:10:537	ae040	buf: {"id":0,"jsonrpc":"2.0","result":["0x4a2f21d0e5e999c48038065d1ad03619d0abca0cfa12330fa7c5598658911b41","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf893"]}
+
+03:17:10:537	ae040	parse packet: 247
+03:17:10:537	ae040	ETH: job changed
+03:17:10:537	ae040	new buf size: 0
+03:17:10:537	ae040	ETH: 07/09/17-03:17:10 - New job from eu1.ethermine.org:4444
+03:17:10:537	ae040	target: 0x0000000112e0be82 (diff: 4000MH), epoch 133(2.04GB)
+03:17:10:537	ae040	ETH - Total Speed: 29.243 Mh/s, Total Shares: 1, Rejected: 0, Time: 00:04
+03:17:10:537	ae040	ETH: GPU0 29.243 Mh/s
+03:17:10:537	ae040	 DCR - Total Speed: 584.858 Mh/s, Total Shares: 8, Rejected: 0
+03:17:10:537	ae040	 DCR: GPU0 584.858 Mh/s
+03:17:14:475	ae040	ETH: checking pool connection...
+03:17:14:475	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:17:14:553	ae040	got 248 bytes
+03:17:14:553	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0x4a2f21d0e5e999c48038065d1ad03619d0abca0cfa12330fa7c5598658911b41","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf893"]}
+
+03:17:14:553	ae040	parse packet: 247
+03:17:14:553	ae040	ETH: job is the same
+03:17:14:553	ae040	new buf size: 0
+03:17:15:473	b3d50	DCR: put share nonce 86be0e0 enonce 2886e8d3
+03:17:15:473	b3d50	DCR round found 1 shares
+03:17:15:488	b0a10	 DCR: 07/09/17-03:17:15 - SHARE FOUND - (GPU 0)
+03:17:15:488	b0a10	send: {"params": ["1BDWnsHhJHyWQNDtScrQN1xc1i9VrQ4vAQ", "00000017677cdc73", "86e8d3", "5961840e", "e0e06b08"], "id": 4, "method": "mining.submit"}
+
+03:17:15:613	b0a10	got 36 bytes
+03:17:15:613	b0a10	buf: {"id":4,"result":true,"error":null}
+
+03:17:15:613	b0a10	parse packet: 35
+03:17:15:613	b0a10	 DCR: Share accepted (125 ms)!
+03:17:15:613	b0a10	new buf size: 0
+03:17:19:542	afec0	GPU0 t=57C fan=52%
+03:17:19:542	afec0	em hbt: 0, dm hbt: 0, fm hbt: 0, 
+03:17:19:542	afec0	watchdog - thread 0 (gpu0), hb time 31
+03:17:19:542	afec0	watchdog - thread 1 (gpu0), hb time 140
+03:17:21:777	b0a10	got 405 bytes
+03:17:21:777	b0a10	buf: {"params":["00000017677d2f57","11d6836b64a9c74640d4b7164a82989b402e26a696fa7ee10000007500000000","beac2d1fed5e9d377b50924c619a2b7e060ca0ed869eb46a42c0531e12138e30725e26b4d865c5af2efd28a550c76f7c8a1bec7ad3ca98c441bbf26285eb61d201001ef0321b8a190500000002a500003884011a2ea8939e0100000095460200b51300002284615900000000","04000000",[],"04000000","1a018438","59618422",true],"id":null,"method":"mining.notify"}
+
+03:17:21:777	b0a10	parse packet: 404
+03:17:21:777	b0a10	new buf size: 0
+03:17:21:777	b0a10	 DCR: 07/09/17-03:17:21 - New job from decred.eu.nicehash.com:3354
+03:17:21:777	b0a10	target: 0x000000007fff8000 (diff: 8590MH), block #149141
+03:17:24:293	ae040	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x1be472d", "0x000000000000000000000000000000000000000000000000000000007c5ac81c"]}
+
+03:17:24:371	ae040	got 39 bytes
+03:17:24:371	ae040	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+03:17:24:371	ae040	parse packet: 38
+03:17:24:371	ae040	new buf size: 0
+03:17:24:496	ae040	ETH: checking pool connection...
+03:17:24:496	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:17:24:574	ae040	got 248 bytes
+03:17:24:574	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0x4a2f21d0e5e999c48038065d1ad03619d0abca0cfa12330fa7c5598658911b41","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf893"]}
+
+03:17:24:574	ae040	parse packet: 247
+03:17:24:574	ae040	ETH: job is the same
+03:17:24:574	ae040	new buf size: 0
+03:17:27:262	b3e00	DCR: put share nonce ac1512a enonce 28341c26
+03:17:27:262	b3e00	DCR round found 1 shares
+03:17:27:277	b0a10	 DCR: 07/09/17-03:17:27 - SHARE FOUND - (GPU 0)
+03:17:27:277	b0a10	send: {"params": ["1BDWnsHhJHyWQNDtScrQN1xc1i9VrQ4vAQ", "00000017677d2f57", "341c26", "59618422", "2a51c10a"], "id": 4, "method": "mining.submit"}
+
+03:17:27:402	b0a10	got 36 bytes
+03:17:27:402	b0a10	buf: {"id":4,"result":true,"error":null}
+
+03:17:27:402	b0a10	parse packet: 35
+03:17:27:402	b0a10	 DCR: Share accepted (125 ms)!
+03:17:27:402	b0a10	new buf size: 0
+03:17:27:824	b3e00	ETH: put share nonce b638ae28140767c6
+03:17:27:824	b3e00	ETH round found 1 shares
+03:17:27:840	ae040	ETH: 07/09/17-03:17:27 - SHARE FOUND - (GPU 0)
+03:17:27:840	ae040	send: {"id":4,"method":"eth_submitWork","params":["0xb638ae28140767c6","0x4a2f21d0e5e999c48038065d1ad03619d0abca0cfa12330fa7c5598658911b41","0x5a61971d7fd5c4dff1980cc44e8d91ecfee8f1207b981a503e53ca718452321f"]}
+
+03:17:27:934	ae040	got 39 bytes
+03:17:27:934	ae040	buf: {"id":4,"jsonrpc":"2.0","result":true}
+
+03:17:27:934	ae040	parse packet: 38
+03:17:27:934	ae040	ETH: Share accepted (94 ms)!
+03:17:27:934	ae040	new buf size: 0
+03:17:34:503	ae040	ETH: checking pool connection...
+03:17:34:503	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:17:34:581	ae040	got 248 bytes
+03:17:34:581	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0x4a2f21d0e5e999c48038065d1ad03619d0abca0cfa12330fa7c5598658911b41","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf893"]}
+
+03:17:34:581	ae040	parse packet: 247
+03:17:34:581	ae040	ETH: job is the same
+03:17:34:581	ae040	new buf size: 0
+03:17:36:769	ae040	got 248 bytes
+03:17:36:769	ae040	buf: {"id":0,"jsonrpc":"2.0","result":["0x4917a5a99c8be3141f1cab7fec95f8a099d1e992d61b3cc9b5021e0187b708ed","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf894"]}
+
+03:17:36:769	ae040	parse packet: 247
+03:17:36:769	ae040	ETH: job changed
+03:17:36:769	ae040	new buf size: 0
+03:17:36:769	ae040	ETH: 07/09/17-03:17:36 - New job from eu1.ethermine.org:4444
+03:17:36:769	ae040	target: 0x0000000112e0be82 (diff: 4000MH), epoch 133(2.04GB)
+03:17:36:769	ae040	ETH - Total Speed: 29.223 Mh/s, Total Shares: 2, Rejected: 0, Time: 00:04
+03:17:36:769	ae040	ETH: GPU0 29.223 Mh/s
+03:17:36:769	ae040	 DCR - Total Speed: 584.464 Mh/s, Total Shares: 10, Rejected: 0
+03:17:36:769	ae040	 DCR: GPU0 584.464 Mh/s
+03:17:39:956	ae040	got 248 bytes
+03:17:39:956	ae040	buf: {"id":0,"jsonrpc":"2.0","result":["0xeada0a1347dd7c089c8a5761a480a08e0dd84ad6a6b17db5899312420840f315","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf895"]}
+
+03:17:39:956	ae040	parse packet: 247
+03:17:39:956	ae040	ETH: job changed
+03:17:39:956	ae040	new buf size: 0
+03:17:39:956	ae040	ETH: 07/09/17-03:17:39 - New job from eu1.ethermine.org:4444
+03:17:39:956	ae040	target: 0x0000000112e0be82 (diff: 4000MH), epoch 133(2.04GB)
+03:17:39:956	ae040	ETH - Total Speed: 29.480 Mh/s, Total Shares: 2, Rejected: 0, Time: 00:04
+03:17:39:956	ae040	ETH: GPU0 29.480 Mh/s
+03:17:39:956	ae040	 DCR - Total Speed: 589.594 Mh/s, Total Shares: 10, Rejected: 0
+03:17:39:956	ae040	 DCR: GPU0 589.594 Mh/s
+03:17:44:295	ae040	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x1c0f0c4", "0x000000000000000000000000000000000000000000000000000000007c5ac81c"]}
+
+03:17:44:367	ae040	got 39 bytes
+03:17:44:367	ae040	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+03:17:44:367	ae040	parse packet: 38
+03:17:44:367	ae040	new buf size: 0
+03:17:44:514	ae040	ETH: checking pool connection...
+03:17:44:514	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:17:44:584	ae040	got 248 bytes
+03:17:44:584	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0xeada0a1347dd7c089c8a5761a480a08e0dd84ad6a6b17db5899312420840f315","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf895"]}
+
+03:17:44:584	ae040	parse packet: 247
+03:17:44:584	ae040	ETH: job is the same
+03:17:44:584	ae040	new buf size: 0
+03:17:45:723	b0a10	got 405 bytes
+03:17:45:723	b0a10	buf: {"params":["00000017677d58b1","11d6836b64a9c74640d4b7164a82989b402e26a696fa7ee10000007500000000","2feabc9d8ca5cb6c53cebb68fb8a7d18b2edf1122323e4da97e5aacf472ac01718a66103d2e90bcdf729599286f22c78bdecb75566b30e3294477e824456f04c01001ef0321b8a190500000002a500003884011a2ea8939e0100000095460200dd1700003a84615900000000","04000000",[],"04000000","1a018438","5961843a",true],"id":null,"method":"mining.notify"}
+
+03:17:45:723	b0a10	parse packet: 404
+03:17:45:723	b0a10	new buf size: 0
+03:17:45:724	b0a10	 DCR: 07/09/17-03:17:45 - New job from decred.eu.nicehash.com:3354
+03:17:45:724	b0a10	target: 0x000000007fff8000 (diff: 8590MH), block #149141
+03:17:45:842	b3d50	DCR: put share nonce d35003d enonce 28ec7c37
+03:17:45:843	b3d50	DCR round found 1 shares
+03:17:45:844	b0a10	 DCR: 07/09/17-03:17:45 - SHARE FOUND - (GPU 0)
+03:17:45:846	b0a10	send: {"params": ["1BDWnsHhJHyWQNDtScrQN1xc1i9VrQ4vAQ", "00000017677d58b1", "ec7c37", "5961843a", "3d00350d"], "id": 4, "method": "mining.submit"}
+
+03:17:45:956	b0a10	got 63 bytes
+03:17:45:956	b0a10	buf: {"id":4,"result":false,"error":[1,"Share above target.",null]}
+
+03:17:45:956	b0a10	parse packet: 60
+03:17:45:956	b0a10	 DCR: Share rejected (109 ms)!
+03:17:45:957	b0a10	new buf size: 0
+03:17:46:547	b3e00	DCR: put share nonce d6470be enonce 2806dc4b
+03:17:46:547	b3e00	DCR round found 1 shares
+03:17:46:549	b0a10	 DCR: 07/09/17-03:17:46 - SHARE FOUND - (GPU 0)
+03:17:46:549	b0a10	send: {"params": ["1BDWnsHhJHyWQNDtScrQN1xc1i9VrQ4vAQ", "00000017677d58b1", "06dc4b", "5961843a", "be70640d"], "id": 4, "method": "mining.submit"}
+
+03:17:46:671	b0a10	got 36 bytes
+03:17:46:671	b0a10	buf: {"id":4,"result":true,"error":null}
+
+03:17:46:671	b0a10	parse packet: 35
+03:17:46:671	b0a10	 DCR: Share accepted (125 ms)!
+03:17:46:672	b0a10	new buf size: 0
+03:17:51:517	afec0	GPU0 t=57C fan=52%
+03:17:51:519	afec0	em hbt: 0, dm hbt: 0, fm hbt: 0, 
+03:17:51:520	afec0	watchdog - thread 0 (gpu0), hb time 47
+03:17:51:520	afec0	watchdog - thread 1 (gpu0), hb time 141
+03:17:54:528	ae040	ETH: checking pool connection...
+03:17:54:528	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:17:54:600	ae040	got 248 bytes
+03:17:54:600	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0xeada0a1347dd7c089c8a5761a480a08e0dd84ad6a6b17db5899312420840f315","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf895"]}
+
+03:17:54:600	ae040	parse packet: 247
+03:17:54:601	ae040	ETH: job is the same
+03:17:54:601	ae040	new buf size: 0
+03:18:00:028	ae040	got 248 bytes
+03:18:00:028	ae040	buf: {"id":0,"jsonrpc":"2.0","result":["0x8d9b0bbdf34d1807ab08fcfe72a530b72ec8842020ac26033ac42e7467284857","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf896"]}
+
+03:18:00:029	ae040	parse packet: 247
+03:18:00:029	ae040	ETH: job changed
+03:18:00:029	ae040	new buf size: 0
+03:18:00:030	ae040	ETH: 07/09/17-03:18:00 - New job from eu1.ethermine.org:4444
+03:18:00:030	ae040	target: 0x0000000112e0be82 (diff: 4000MH), epoch 133(2.04GB)
+03:18:00:033	ae040	ETH - Total Speed: 29.271 Mh/s, Total Shares: 2, Rejected: 0, Time: 00:04
+03:18:00:035	ae040	ETH: GPU0 29.271 Mh/s
+03:18:00:036	ae040	 DCR - Total Speed: 585.415 Mh/s, Total Shares: 12, Rejected: 1
+03:18:00:038	ae040	 DCR: GPU0 585.415 Mh/s
+03:18:04:310	ae040	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x1c03509", "0x000000000000000000000000000000000000000000000000000000007c5ac81c"]}
+
+03:18:04:384	ae040	got 39 bytes
+03:18:04:384	ae040	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+03:18:04:384	ae040	parse packet: 38
+03:18:04:384	ae040	new buf size: 0
+03:18:04:544	ae040	ETH: checking pool connection...
+03:18:04:544	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:18:04:616	ae040	got 248 bytes
+03:18:04:616	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0x8d9b0bbdf34d1807ab08fcfe72a530b72ec8842020ac26033ac42e7467284857","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf896"]}
+
+03:18:04:616	ae040	parse packet: 247
+03:18:04:616	ae040	ETH: job is the same
+03:18:04:616	ae040	new buf size: 0
+03:18:14:522	ae040	got 248 bytes
+03:18:14:522	ae040	buf: {"id":0,"jsonrpc":"2.0","result":["0x009c59b401a0a30f4c7785f33e23fe81b06daab8ba51302202a4313ae0373364","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf897"]}
+
+03:18:14:522	ae040	parse packet: 247
+03:18:14:522	ae040	ETH: job changed
+03:18:14:523	ae040	new buf size: 0
+03:18:14:523	ae040	ETH: 07/09/17-03:18:14 - New job from eu1.ethermine.org:4444
+03:18:14:524	ae040	target: 0x0000000112e0be82 (diff: 4000MH), epoch 133(2.04GB)
+03:18:14:526	ae040	ETH - Total Speed: 29.231 Mh/s, Total Shares: 2, Rejected: 0, Time: 00:05
+03:18:14:528	ae040	ETH: GPU0 29.231 Mh/s
+03:18:14:529	ae040	 DCR - Total Speed: 584.626 Mh/s, Total Shares: 12, Rejected: 1
+03:18:14:531	ae040	 DCR: GPU0 584.626 Mh/s
+03:18:14:560	ae040	ETH: checking pool connection...
+03:18:14:560	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:18:14:642	ae040	got 248 bytes
+03:18:14:642	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0x009c59b401a0a30f4c7785f33e23fe81b06daab8ba51302202a4313ae0373364","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf897"]}
+
+03:18:14:642	ae040	parse packet: 247
+03:18:14:643	ae040	ETH: job is the same
+03:18:14:643	ae040	new buf size: 0
+03:18:17:107	b3ce4	-dcri is set to 61 (for all GPUs)
+03:18:17:559	b3ce4	-dcri is set to 62 (for all GPUs)
+03:18:17:979	b3ce4	-dcri is set to 63 (for all GPUs)
+03:18:18:067	b3d50	DCR: put share nonce 8d7b369 enonce 283edf11
+03:18:18:067	b3d50	DCR round found 1 shares
+03:18:18:069	b0a10	 DCR: 07/09/17-03:18:18 - SHARE FOUND - (GPU 0)
+03:18:18:070	b0a10	send: {"params": ["1BDWnsHhJHyWQNDtScrQN1xc1i9VrQ4vAQ", "00000017677d58b1", "3edf11", "5961843a", "69b3d708"], "id": 4, "method": "mining.submit"}
+
+03:18:18:171	b0a10	got 36 bytes
+03:18:18:171	b0a10	buf: {"id":4,"result":true,"error":null}
+
+03:18:18:171	b0a10	parse packet: 35
+03:18:18:171	b0a10	 DCR: Share accepted (109 ms)!
+03:18:18:172	b0a10	new buf size: 0
+03:18:18:355	b3ce4	-dcri is set to 64 (for all GPUs)
+03:18:18:737	b3ce4	-dcri is set to 65 (for all GPUs)
+03:18:19:569	afec0	
+03:18:19:571	afec0	GPU #0: GeForce GTX 1070, 8192 MB available, 15 compute units, capability: 6.1
+
+03:18:19:573	afec0	ETH - Total Speed: 28.987 Mh/s, Total Shares: 2, Rejected: 0, Time: 00:05
+03:18:19:575	afec0	ETH: GPU0 28.987 Mh/s
+03:18:19:576	afec0	 DCR - Total Speed: 628.054 Mh/s, Total Shares: 13, Rejected: 1
+03:18:19:578	afec0	 DCR: GPU0 628.054 Mh/s
+03:18:19:582	afec0	Incorrect ETH shares: none
+03:18:19:583	afec0	1 minute average ETH total speed: 29.292 Mh/s
+03:18:19:585	afec0	Pool switches: ETH - 0, DCR - 0
+03:18:19:587	afec0	Current ETH share target: 0x0000000112e0be82 (diff: 4000MH), epoch 133(2.04GB)
+Current DCR share target: 0x000000007fff8000 (diff: 8590MH), block #149141
+03:18:19:595	afec0	GPU0 t=57C fan=55%
+03:18:19:597	afec0	
+03:18:19:688	b3d50	DCR: put share nonce a98d1ff enonce 284edf11
+03:18:19:689	b3d50	DCR round found 1 shares
+03:18:19:690	b0a10	 DCR: 07/09/17-03:18:19 - SHARE FOUND - (GPU 0)
+03:18:19:692	b0a10	send: {"params": ["1BDWnsHhJHyWQNDtScrQN1xc1i9VrQ4vAQ", "00000017677d58b1", "4edf11", "5961843a", "ffd1980a"], "id": 4, "method": "mining.submit"}
+
+03:18:19:794	b0a10	got 36 bytes
+03:18:19:794	b0a10	buf: {"id":4,"result":true,"error":null}
+
+03:18:19:794	b0a10	parse packet: 35
+03:18:19:794	b0a10	 DCR: Share accepted (109 ms)!
+03:18:19:796	b0a10	new buf size: 0
+03:18:21:601	afec0	GPU0 t=57C fan=55%
+03:18:21:603	afec0	em hbt: 0, dm hbt: 0, fm hbt: 47, 
+03:18:21:603	afec0	watchdog - thread 0 (gpu0), hb time 94
+03:18:21:603	afec0	watchdog - thread 1 (gpu0), hb time 188
+03:18:23:543	b3d50	DCR: put share nonce e160104 enonce 2874df11
+03:18:23:543	b3d50	DCR round found 1 shares
+03:18:23:544	b0a10	 DCR: 07/09/17-03:18:23 - SHARE FOUND - (GPU 0)
+03:18:23:545	b0a10	send: {"params": ["1BDWnsHhJHyWQNDtScrQN1xc1i9VrQ4vAQ", "00000017677d58b1", "74df11", "5961843a", "0401160e"], "id": 4, "method": "mining.submit"}
+
+03:18:23:655	b0a10	got 36 bytes
+03:18:23:655	b0a10	buf: {"id":4,"result":true,"error":null}
+
+03:18:23:655	b0a10	parse packet: 35
+03:18:23:656	b0a10	 DCR: Share accepted (109 ms)!
+03:18:23:658	b0a10	new buf size: 0
+03:18:24:325	ae040	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x1bda9e7", "0x000000000000000000000000000000000000000000000000000000007c5ac81c"]}
+
+03:18:24:403	ae040	got 39 bytes
+03:18:24:403	ae040	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+03:18:24:403	ae040	parse packet: 38
+03:18:24:404	ae040	new buf size: 0
+03:18:24:576	ae040	ETH: checking pool connection...
+03:18:24:576	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:18:24:646	ae040	got 248 bytes
+03:18:24:646	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0x009c59b401a0a30f4c7785f33e23fe81b06daab8ba51302202a4313ae0373364","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf897"]}
+
+03:18:24:646	ae040	parse packet: 247
+03:18:24:646	ae040	ETH: job is the same
+03:18:24:647	ae040	new buf size: 0
+03:18:28:411	b3d50	DCR: put share nonce ba6c2bf enonce 28a4df11
+03:18:28:412	b3d50	DCR round found 1 shares
+03:18:28:413	b0a10	 DCR: 07/09/17-03:18:28 - SHARE FOUND - (GPU 0)
+03:18:28:415	b0a10	send: {"params": ["1BDWnsHhJHyWQNDtScrQN1xc1i9VrQ4vAQ", "00000017677d58b1", "a4df11", "5961843a", "bfc2a60b"], "id": 4, "method": "mining.submit"}
+
+03:18:28:544	b0a10	got 36 bytes
+03:18:28:544	b0a10	buf: {"id":4,"result":true,"error":null}
+
+03:18:28:544	b0a10	parse packet: 35
+03:18:28:545	b0a10	 DCR: Share accepted (141 ms)!
+03:18:28:547	b0a10	new buf size: 0
+03:18:29:427	b3d50	DCR: put share nonce 336d0d9 enonce 28aedf11
+03:18:29:428	b3d50	DCR round found 1 shares
+03:18:29:429	b0a10	 DCR: 07/09/17-03:18:29 - SHARE FOUND - (GPU 0)
+03:18:29:431	b0a10	send: {"params": ["1BDWnsHhJHyWQNDtScrQN1xc1i9VrQ4vAQ", "00000017677d58b1", "aedf11", "5961843a", "d9d03603"], "id": 4, "method": "mining.submit"}
+
+03:18:29:544	b0a10	got 36 bytes
+03:18:29:544	b0a10	buf: {"id":4,"result":true,"error":null}
+
+03:18:29:544	b0a10	parse packet: 35
+03:18:29:545	b0a10	 DCR: Share accepted (125 ms)!
+03:18:29:547	b0a10	new buf size: 0
+03:18:34:591	ae040	ETH: checking pool connection...
+03:18:34:591	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:18:34:667	ae040	got 248 bytes
+03:18:34:667	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0x009c59b401a0a30f4c7785f33e23fe81b06daab8ba51302202a4313ae0373364","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf897"]}
+
+03:18:34:667	ae040	parse packet: 247
+03:18:34:667	ae040	ETH: job is the same
+03:18:34:668	ae040	new buf size: 0
+03:18:40:781	b0a10	got 406 bytes
+03:18:40:781	b0a10	buf: {"params":["00000017677d9afa","11d6836b64a9c74640d4b7164a82989b402e26a696fa7ee10000007500000000","2feabc9d8ca5cb6c53cebb68fb8a7d18b2edf1122323e4da97e5aacf472ac01718a66103d2e90bcdf729599286f22c78bdecb75566b30e3294477e824456f04c01001ef0321b8a190500000002a500003884011a2ea8939e0100000095460200dd1700007184615900000000","04000000",[],"04000000","1a018438","59618471",false],"id":null,"method":"mining.notify"}
+
+03:18:40:781	b0a10	parse packet: 405
+03:18:40:781	b0a10	new buf size: 0
+03:18:40:782	b0a10	 DCR: 07/09/17-03:18:40 - New job from decred.eu.nicehash.com:3354
+03:18:40:782	b0a10	target: 0x000000007fff8000 (diff: 8590MH), block #149141
+03:18:43:526	b3e00	DCR: put share nonce 1cb23eb enonce 2818240a
+03:18:43:527	b3e00	DCR round found 1 shares
+03:18:43:528	b0a10	 DCR: 07/09/17-03:18:43 - SHARE FOUND - (GPU 0)
+03:18:43:531	b0a10	send: {"params": ["1BDWnsHhJHyWQNDtScrQN1xc1i9VrQ4vAQ", "00000017677d9afa", "18240a", "59618471", "eb23cb01"], "id": 4, "method": "mining.submit"}
+
+03:18:43:639	b0a10	got 36 bytes
+03:18:43:639	b0a10	buf: {"id":4,"result":true,"error":null}
+
+03:18:43:639	b0a10	parse packet: 35
+03:18:43:640	b0a10	 DCR: Share accepted (110 ms)!
+03:18:43:641	b0a10	new buf size: 0
+03:18:44:342	ae040	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x1bb3fd2", "0x000000000000000000000000000000000000000000000000000000007c5ac81c"]}
+
+03:18:44:416	ae040	got 39 bytes
+03:18:44:416	ae040	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+03:18:44:416	ae040	parse packet: 38
+03:18:44:416	ae040	new buf size: 0
+03:18:44:607	ae040	ETH: checking pool connection...
+03:18:44:607	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:18:44:679	ae040	got 248 bytes
+03:18:44:679	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0x009c59b401a0a30f4c7785f33e23fe81b06daab8ba51302202a4313ae0373364","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf897"]}
+
+03:18:44:679	ae040	parse packet: 247
+03:18:44:680	ae040	ETH: job is the same
+03:18:44:680	ae040	new buf size: 0
+03:18:51:653	afec0	GPU0 t=57C fan=52%
+03:18:51:656	afec0	em hbt: 0, dm hbt: 0, fm hbt: 78, 
+03:18:51:656	afec0	watchdog - thread 0 (gpu0), hb time 125
+03:18:51:657	afec0	watchdog - thread 1 (gpu0), hb time 15
+03:18:54:623	ae040	ETH: checking pool connection...
+03:18:54:623	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:18:54:695	ae040	got 248 bytes
+03:18:54:695	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0x009c59b401a0a30f4c7785f33e23fe81b06daab8ba51302202a4313ae0373364","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf897"]}
+
+03:18:54:695	ae040	parse packet: 247
+03:18:54:696	ae040	ETH: job is the same
+03:18:54:696	ae040	new buf size: 0
+03:18:57:653	ae040	got 248 bytes
+03:18:57:653	ae040	buf: {"id":0,"jsonrpc":"2.0","result":["0xbd7891cbf44d37bf5750bc936c876af48b4d962266b1bd07aaca4533f12d8304","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf898"]}
+
+03:18:57:653	ae040	parse packet: 247
+03:18:57:654	ae040	ETH: job changed
+03:18:57:654	ae040	new buf size: 0
+03:18:57:654	ae040	ETH: 07/09/17-03:18:57 - New job from eu1.ethermine.org:4444
+03:18:57:655	ae040	target: 0x0000000112e0be82 (diff: 4000MH), epoch 133(2.04GB)
+03:18:57:657	ae040	ETH - Total Speed: 29.075 Mh/s, Total Shares: 2, Rejected: 0, Time: 00:05
+03:18:57:661	ae040	ETH: GPU0 29.075 Mh/s
+03:18:57:662	ae040	 DCR - Total Speed: 629.961 Mh/s, Total Shares: 18, Rejected: 1
+03:18:57:664	ae040	 DCR: GPU0 629.961 Mh/s
+03:18:58:943	b3e00	DCR: put share nonce c60d215 enonce 28b0240a
+03:18:58:944	b3e00	DCR round found 1 shares
+03:18:58:946	b0a10	 DCR: 07/09/17-03:18:58 - SHARE FOUND - (GPU 0)
+03:18:58:947	b0a10	send: {"params": ["1BDWnsHhJHyWQNDtScrQN1xc1i9VrQ4vAQ", "00000017677d9afa", "b0240a", "59618471", "15d2600c"], "id": 4, "method": "mining.submit"}
+
+03:18:59:058	b0a10	got 36 bytes
+03:18:59:058	b0a10	buf: {"id":4,"result":true,"error":null}
+
+03:18:59:058	b0a10	parse packet: 35
+03:18:59:058	b0a10	 DCR: Share accepted (109 ms)!
+03:18:59:059	b0a10	new buf size: 0
+03:19:01:070	b3d50	DCR: put share nonce 55b8316 enonce 28c60047
+03:19:01:070	b3d50	DCR round found 1 shares
+03:19:01:072	b0a10	 DCR: 07/09/17-03:19:01 - SHARE FOUND - (GPU 0)
+03:19:01:073	b0a10	send: {"params": ["1BDWnsHhJHyWQNDtScrQN1xc1i9VrQ4vAQ", "00000017677d9afa", "c60047", "59618471", "16835b05"], "id": 4, "method": "mining.submit"}
+
+03:19:01:185	b0a10	got 36 bytes
+03:19:01:185	b0a10	buf: {"id":4,"result":true,"error":null}
+
+03:19:01:185	b0a10	parse packet: 35
+03:19:01:186	b0a10	 DCR: Share accepted (125 ms)!
+03:19:01:187	b0a10	new buf size: 0
+03:19:04:357	ae040	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x1bd5bfe", "0x000000000000000000000000000000000000000000000000000000007c5ac81c"]}
+
+03:19:04:429	ae040	got 39 bytes
+03:19:04:429	ae040	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+03:19:04:429	ae040	parse packet: 38
+03:19:04:429	ae040	new buf size: 0
+03:19:04:639	ae040	ETH: checking pool connection...
+03:19:04:639	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:19:04:711	ae040	got 248 bytes
+03:19:04:711	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0xbd7891cbf44d37bf5750bc936c876af48b4d962266b1bd07aaca4533f12d8304","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf898"]}
+
+03:19:04:711	ae040	parse packet: 247
+03:19:04:711	ae040	ETH: job is the same
+03:19:04:711	ae040	new buf size: 0
+03:19:13:331	b3e00	ETH: put share nonce b6b7490812090e73
+03:19:13:331	b3e00	ETH round found 1 shares
+03:19:13:332	ae040	ETH: 07/09/17-03:19:13 - SHARE FOUND - (GPU 0)
+03:19:13:332	ae040	send: {"id":4,"method":"eth_submitWork","params":["0xb6b7490812090e73","0xbd7891cbf44d37bf5750bc936c876af48b4d962266b1bd07aaca4533f12d8304","0xef9835023c5b7494546c4936ccdadf86a40049a93bf5018fac1bed75a6bfb200"]}
+
+03:19:13:410	ae040	got 39 bytes
+03:19:13:410	ae040	buf: {"id":4,"jsonrpc":"2.0","result":true}
+
+03:19:13:410	ae040	parse packet: 38
+03:19:13:411	ae040	ETH: Share accepted (78 ms)!
+03:19:13:413	ae040	new buf size: 0
+03:19:14:655	ae040	ETH: checking pool connection...
+03:19:14:655	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:19:14:729	ae040	got 248 bytes
+03:19:14:729	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0xbd7891cbf44d37bf5750bc936c876af48b4d962266b1bd07aaca4533f12d8304","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf898"]}
+
+03:19:14:729	ae040	parse packet: 247
+03:19:14:730	ae040	ETH: job is the same
+03:19:14:730	ae040	new buf size: 0
+03:19:21:711	afec0	GPU0 t=57C fan=52%
+03:19:21:712	afec0	em hbt: 0, dm hbt: 0, fm hbt: 78, 
+03:19:21:712	afec0	watchdog - thread 0 (gpu0), hb time 172
+03:19:21:712	afec0	watchdog - thread 1 (gpu0), hb time 62
+03:19:24:372	ae040	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x1bb49e2", "0x000000000000000000000000000000000000000000000000000000007c5ac81c"]}
+
+03:19:24:447	ae040	got 39 bytes
+03:19:24:447	ae040	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+03:19:24:447	ae040	parse packet: 38
+03:19:24:447	ae040	new buf size: 0
+03:19:24:670	ae040	ETH: checking pool connection...
+03:19:24:670	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:19:24:743	ae040	got 248 bytes
+03:19:24:743	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0xbd7891cbf44d37bf5750bc936c876af48b4d962266b1bd07aaca4533f12d8304","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf898"]}
+
+03:19:24:743	ae040	parse packet: 247
+03:19:24:744	ae040	ETH: job is the same
+03:19:24:744	ae040	new buf size: 0
+03:19:33:825	b3e00	DCR: put share nonce e8d82e4 enonce 2808260a
+03:19:33:825	b3e00	DCR round found 1 shares
+03:19:33:826	b0a10	 DCR: 07/09/17-03:19:33 - SHARE FOUND - (GPU 0)
+03:19:33:831	b0a10	send: {"params": ["1BDWnsHhJHyWQNDtScrQN1xc1i9VrQ4vAQ", "00000017677d9afa", "08260a", "59618471", "e4828d0e"], "id": 4, "method": "mining.submit"}
+
+03:19:33:931	b0a10	got 36 bytes
+03:19:33:931	b0a10	buf: {"id":4,"result":true,"error":null}
+
+03:19:33:931	b0a10	parse packet: 35
+03:19:33:931	b0a10	 DCR: Share accepted (94 ms)!
+03:19:33:932	b0a10	new buf size: 0
+03:19:34:684	ae040	ETH: checking pool connection...
+03:19:34:684	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:19:34:754	ae040	got 248 bytes
+03:19:34:754	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0xbd7891cbf44d37bf5750bc936c876af48b4d962266b1bd07aaca4533f12d8304","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf898"]}
+
+03:19:34:754	ae040	parse packet: 247
+03:19:34:754	ae040	ETH: job is the same
+03:19:34:754	ae040	new buf size: 0
+03:19:35:731	b0a10	got 406 bytes
+03:19:35:731	b0a10	buf: {"params":["00000017677dd667","11d6836b64a9c74640d4b7164a82989b402e26a696fa7ee10000007500000000","2feabc9d8ca5cb6c53cebb68fb8a7d18b2edf1122323e4da97e5aacf472ac01718a66103d2e90bcdf729599286f22c78bdecb75566b30e3294477e824456f04c01001ef0321b8a190500000002a500003884011a2ea8939e0100000095460200dd170000a884615900000000","04000000",[],"04000000","1a018438","596184a8",false],"id":null,"method":"mining.notify"}
+
+03:19:35:731	b0a10	parse packet: 405
+03:19:35:732	b0a10	new buf size: 0
+03:19:35:732	b0a10	 DCR: 07/09/17-03:19:35 - New job from decred.eu.nicehash.com:3354
+03:19:35:732	b0a10	target: 0x000000007fff8000 (diff: 8590MH), block #149141
+03:19:42:239	b3d50	DCR: put share nonce 9b882b3 enonce 283eb047
+03:19:42:240	b3d50	DCR round found 1 shares
+03:19:42:242	b0a10	 DCR: 07/09/17-03:19:42 - SHARE FOUND - (GPU 0)
+03:19:42:244	b0a10	send: {"params": ["1BDWnsHhJHyWQNDtScrQN1xc1i9VrQ4vAQ", "00000017677dd667", "3eb047", "596184a8", "b382b809"], "id": 4, "method": "mining.submit"}
+
+03:19:42:354	b0a10	got 36 bytes
+03:19:42:354	b0a10	buf: {"id":4,"result":true,"error":null}
+
+03:19:42:354	b0a10	parse packet: 35
+03:19:42:354	b0a10	 DCR: Share accepted (109 ms)!
+03:19:42:354	b0a10	new buf size: 0
+03:19:44:388	ae040	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x1bc7765", "0x000000000000000000000000000000000000000000000000000000007c5ac81c"]}
+
+03:19:44:464	ae040	got 39 bytes
+03:19:44:464	ae040	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+03:19:44:464	ae040	parse packet: 38
+03:19:44:464	ae040	new buf size: 0
+03:19:44:702	ae040	ETH: checking pool connection...
+03:19:44:702	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:19:44:774	ae040	got 248 bytes
+03:19:44:774	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0xbd7891cbf44d37bf5750bc936c876af48b4d962266b1bd07aaca4533f12d8304","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf898"]}
+
+03:19:44:774	ae040	parse packet: 247
+03:19:44:774	ae040	ETH: job is the same
+03:19:44:774	ae040	new buf size: 0
+03:19:49:782	b0a10	got 405 bytes
+03:19:49:782	b0a10	buf: {"params":["00000017677e2fa5","11d6836b64a9c74640d4b7164a82989b402e26a696fa7ee10000007500000000","1371abc7ccfca7bf44fb36a0931ddf70d7d389d527190380126922969e7c43b318a66103d2e90bcdf729599286f22c78bdecb75566b30e3294477e824456f04c01001ef0321b8a190500000002a500003884011a2ea8939e0100000095460200dd170000b684615900000000","04000000",[],"04000000","1a018438","596184b6",true],"id":null,"method":"mining.notify"}
+
+03:19:49:782	b0a10	parse packet: 404
+03:19:49:782	b0a10	new buf size: 0
+03:19:49:782	b0a10	 DCR: 07/09/17-03:19:49 - New job from decred.eu.nicehash.com:3354
+03:19:49:782	b0a10	target: 0x000000007fff8000 (diff: 8590MH), block #149141
+03:19:50:779	b0a10	got 405 bytes
+03:19:50:779	b0a10	buf: {"params":["00000017677e4e27","a73803254348b4b23ef44fccffa1265bc1ac62949d45f9c10000004400000000","2fad85b7e0611bd9171aec81439e4c9a8dde937d5e91bbef0ed673f46a19b94f5d7cf5af56f2c0ca47f047495884bb440d708d52f3386acf425e118d6dfa643501007aab2db0b1fb0300000003a500003884011a2ea8939e0100000096460200d3050000b784615900000000","04000000",[],"04000000","1a018438","596184b7",true],"id":null,"method":"mining.notify"}
+
+03:19:50:779	b0a10	parse packet: 404
+03:19:50:780	b0a10	new buf size: 0
+03:19:50:780	b0a10	 DCR: 07/09/17-03:19:50 - New job from decred.eu.nicehash.com:3354
+03:19:50:780	b0a10	target: 0x000000007fff8000 (diff: 8590MH), block #149142
+03:19:51:764	afec0	GPU0 t=57C fan=52%
+03:19:51:765	afec0	em hbt: 0, dm hbt: 0, fm hbt: 110, 
+03:19:51:765	afec0	watchdog - thread 0 (gpu0), hb time 203
+03:19:51:765	afec0	watchdog - thread 1 (gpu0), hb time 94
+03:19:51:778	b0a10	got 405 bytes
+03:19:51:778	b0a10	buf: {"params":["00000017677e6b7c","a73803254348b4b23ef44fccffa1265bc1ac62949d45f9c10000004400000000","32e15da25d9a2d11d3a5704080a91601174a66758321f993ba53d681e1bc9c599540e9001b814f43f40b8b1a125d98f2a0a68c4e6a0580869053e2071b6caebf01007aab2db0b1fb0500000003a500003884011a2ea8939e010000009646020085080000b884615900000000","04000000",[],"04000000","1a018438","596184b8",true],"id":null,"method":"mining.notify"}
+
+03:19:51:778	b0a10	parse packet: 404
+03:19:51:778	b0a10	new buf size: 0
+03:19:51:778	b0a10	 DCR: 07/09/17-03:19:51 - New job from decred.eu.nicehash.com:3354
+03:19:51:778	b0a10	target: 0x000000007fff8000 (diff: 8590MH), block #149142
+03:19:54:716	ae040	ETH: checking pool connection...
+03:19:54:716	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:19:54:790	ae040	got 248 bytes
+03:19:54:790	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0xbd7891cbf44d37bf5750bc936c876af48b4d962266b1bd07aaca4533f12d8304","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf898"]}
+
+03:19:54:790	ae040	parse packet: 247
+03:19:54:791	ae040	ETH: job is the same
+03:19:54:791	ae040	new buf size: 0
+03:20:04:403	ae040	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x1bd7ddb", "0x000000000000000000000000000000000000000000000000000000007c5ac81c"]}
+
+03:20:04:477	ae040	got 39 bytes
+03:20:04:477	ae040	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+03:20:04:477	ae040	parse packet: 38
+03:20:04:477	ae040	new buf size: 0
+03:20:04:732	ae040	ETH: checking pool connection...
+03:20:04:732	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:20:04:806	ae040	got 248 bytes
+03:20:04:806	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0xbd7891cbf44d37bf5750bc936c876af48b4d962266b1bd07aaca4533f12d8304","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf898"]}
+
+03:20:04:806	ae040	parse packet: 247
+03:20:04:806	ae040	ETH: job is the same
+03:20:04:806	ae040	new buf size: 0
+03:20:05:786	ae040	got 248 bytes
+03:20:05:786	ae040	buf: {"id":0,"jsonrpc":"2.0","result":["0x07d6c500df946f624145f01cbb43181bc54b3f072d5e89ea64d7a4dbc3f010b6","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf899"]}
+
+03:20:05:786	ae040	parse packet: 247
+03:20:05:787	ae040	ETH: job changed
+03:20:05:787	ae040	new buf size: 0
+03:20:05:787	ae040	ETH: 07/09/17-03:20:05 - New job from eu1.ethermine.org:4444
+03:20:05:788	ae040	target: 0x0000000112e0be82 (diff: 4000MH), epoch 133(2.04GB)
+03:20:05:790	ae040	ETH - Total Speed: 29.096 Mh/s, Total Shares: 3, Rejected: 0, Time: 00:07
+03:20:05:792	ae040	ETH: GPU0 29.096 Mh/s
+03:20:05:793	ae040	 DCR - Total Speed: 630.408 Mh/s, Total Shares: 22, Rejected: 1
+03:20:05:795	ae040	 DCR: GPU0 630.408 Mh/s
+03:20:09:216	b3d50	DCR: put share nonce ae452df enonce 28a8fa89
+03:20:09:217	b3d50	DCR round found 1 shares
+03:20:09:219	b0a10	 DCR: 07/09/17-03:20:09 - SHARE FOUND - (GPU 0)
+03:20:09:220	b0a10	send: {"params": ["1BDWnsHhJHyWQNDtScrQN1xc1i9VrQ4vAQ", "00000017677e6b7c", "a8fa89", "596184b8", "df52e40a"], "id": 4, "method": "mining.submit"}
+
+03:20:09:321	b0a10	got 36 bytes
+03:20:09:321	b0a10	buf: {"id":4,"result":true,"error":null}
+
+03:20:09:321	b0a10	parse packet: 35
+03:20:09:321	b0a10	 DCR: Share accepted (94 ms)!
+03:20:09:322	b0a10	new buf size: 0
+03:20:09:825	b3d50	DCR: put share nonce 60a737c enonce 28aefa89
+03:20:09:825	b3d50	DCR round found 1 shares
+03:20:09:826	b0a10	 DCR: 07/09/17-03:20:09 - SHARE FOUND - (GPU 0)
+03:20:09:827	b0a10	send: {"params": ["1BDWnsHhJHyWQNDtScrQN1xc1i9VrQ4vAQ", "00000017677e6b7c", "aefa89", "596184b8", "7c730a06"], "id": 4, "method": "mining.submit"}
+
+03:20:09:930	b0a10	got 36 bytes
+03:20:09:930	b0a10	buf: {"id":4,"result":true,"error":null}
+
+03:20:09:930	b0a10	parse packet: 35
+03:20:09:930	b0a10	 DCR: Share accepted (94 ms)!
+03:20:09:931	b0a10	new buf size: 0
+03:20:13:573	ae040	got 248 bytes
+03:20:13:573	ae040	buf: {"id":0,"jsonrpc":"2.0","result":["0xc3c1441c9cf0d2b3384145d6c9695f9b074be4b68e83b57c6d1d701b09f4f9d2","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf89a"]}
+
+03:20:13:573	ae040	parse packet: 247
+03:20:13:573	ae040	ETH: job changed
+03:20:13:574	ae040	new buf size: 0
+03:20:13:574	ae040	ETH: 07/09/17-03:20:13 - New job from eu1.ethermine.org:4444
+03:20:13:575	ae040	target: 0x0000000112e0be82 (diff: 4000MH), epoch 133(2.04GB)
+03:20:13:577	ae040	ETH - Total Speed: 29.080 Mh/s, Total Shares: 3, Rejected: 0, Time: 00:07
+03:20:13:580	ae040	ETH: GPU0 29.080 Mh/s
+03:20:13:581	ae040	 DCR - Total Speed: 630.073 Mh/s, Total Shares: 24, Rejected: 1
+03:20:13:582	ae040	 DCR: GPU0 630.073 Mh/s
+03:20:13:676	b3d50	DCR: put share nonce 96b31c1 enonce 28d4fa89
+03:20:13:676	b3d50	DCR round found 1 shares
+03:20:13:677	b0a10	 DCR: 07/09/17-03:20:13 - SHARE FOUND - (GPU 0)
+03:20:13:678	b0a10	send: {"params": ["1BDWnsHhJHyWQNDtScrQN1xc1i9VrQ4vAQ", "00000017677e6b7c", "d4fa89", "596184b8", "c1316b09"], "id": 4, "method": "mining.submit"}
+
+03:20:13:801	b0a10	got 36 bytes
+03:20:13:801	b0a10	buf: {"id":4,"result":true,"error":null}
+
+03:20:13:801	b0a10	parse packet: 35
+03:20:13:802	b0a10	 DCR: Share accepted (125 ms)!
+03:20:13:803	b0a10	new buf size: 0
+03:20:14:035	b3ce4	-dcri is set to 64 (for all GPUs)
+03:20:14:748	ae040	ETH: checking pool connection...
+03:20:14:748	ae040	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:20:14:822	ae040	got 248 bytes
+03:20:14:822	ae040	buf: {"id":3,"jsonrpc":"2.0","result":["0xc3c1441c9cf0d2b3384145d6c9695f9b074be4b68e83b57c6d1d701b09f4f9d2","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf89a"]}
+
+03:20:14:822	ae040	parse packet: 247
+03:20:14:822	ae040	ETH: job is the same
+03:20:14:823	ae040	new buf size: 0
+03:20:14:905	afec0	
+03:20:14:907	afec0	GPU #0: GeForce GTX 1070, 8192 MB available, 15 compute units, capability: 6.1
+
+03:20:14:908	afec0	ETH - Total Speed: 29.109 Mh/s, Total Shares: 3, Rejected: 0, Time: 00:07
+03:20:14:909	afec0	ETH: GPU0 29.109 Mh/s
+03:20:14:910	afec0	 DCR - Total Speed: 620.991 Mh/s, Total Shares: 25, Rejected: 1
+03:20:14:911	afec0	 DCR: GPU0 620.991 Mh/s
+03:20:14:911	afec0	Incorrect ETH shares: none
+03:20:14:912	afec0	1 minute average ETH total speed: 29.089 Mh/s
+03:20:14:913	afec0	Pool switches: ETH - 0, DCR - 0
+03:20:14:914	afec0	Current ETH share target: 0x0000000112e0be82 (diff: 4000MH), epoch 133(2.04GB)
+Current DCR share target: 0x000000007fff8000 (diff: 8590MH), block #149142
+03:20:14:917	afec0	GPU0 t=57C fan=52%
+03:20:14:918	afec0	
+03:20:14:993	b3ce4	-dcri is set to 63 (for all GPUs)
+03:20:15:537	b3ce4	-dcri is set to 62 (for all GPUs)
+03:20:15:903	b3ce4	-dcri is set to 61 (for all GPUs)
+03:20:16:323	b3ce4	-dcri is set to 60 (for all GPUs)
+03:20:17:123	afec0	
+03:20:17:124	afec0	GPU #0: GeForce GTX 1070, 8192 MB available, 15 compute units, capability: 6.1
+
+03:20:17:124	afec0	ETH - Total Speed: 29.353 Mh/s, Total Shares: 3, Rejected: 0, Time: 00:07
+03:20:17:125	afec0	ETH: GPU0 29.353 Mh/s
+03:20:17:125	afec0	 DCR - Total Speed: 587.053 Mh/s, Total Shares: 25, Rejected: 1
+03:20:17:126	afec0	 DCR: GPU0 587.053 Mh/s
+03:20:17:126	afec0	Incorrect ETH shares: none
+03:20:17:127	afec0	1 minute average ETH total speed: 29.094 Mh/s
+03:20:17:127	afec0	Pool switches: ETH - 0, DCR - 0
+03:20:17:128	afec0	Current ETH share target: 0x0000000112e0be82 (diff: 4000MH), epoch 133(2.04GB)
+Current DCR share target: 0x000000007fff8000 (diff: 8590MH), block #149142
+03:20:17:128	afec0	GPU0 t=57C fan=52%
+03:20:17:129	afec0	
+03:20:17:435	ae040	got 248 bytes
+03:20:17:435	ae040	buf: {"id":0,"jsonrpc":"2.0","result":["0x0ed787e58f7ca60f9024153093654c0ecce6fa4e4df2234a9ab0c2ce5c3eacca","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf89b"]}
+
+03:20:17:435	ae040	parse packet: 247
+03:20:17:435	ae040	ETH: job changed
+03:20:17:436	ae040	new buf size: 0
+03:20:17:436	ae040	ETH: 07/09/17-03:20:17 - New job from eu1.ethermine.org:4444
+03:20:17:437	ae040	target: 0x0000000112e0be82 (diff: 4000MH), epoch 133(2.04GB)
+03:20:17:439	ae040	ETH - Total Speed: 29.297 Mh/s, Total Shares: 3, Rejected: 0, Time: 00:07
+03:20:17:441	ae040	ETH: GPU0 29.297 Mh/s
+03:20:17:443	ae040	 DCR - Total Speed: 585.945 Mh/s, Total Shares: 25, Rejected: 1
+03:20:17:445	ae040	 DCR: GPU0 585.945 Mh/s
+03:20:19:487	ae040	got 248 bytes
+03:20:19:487	ae040	buf: {"id":0,"jsonrpc":"2.0","result":["0x69a09913a55b3283fb0ed25813c4f0568e53e1cb58fda9335a03c08dbb62124a","0x9e9724706b96cf93985fa8f097f4c1a687ebc3c5fc93d50a68d8e51211a723e0","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x3cf89c"]}
+
+03:20:19:487	ae040	parse packet: 247
+03:20:19:487	ae040	ETH: job changed
+03:20:19:487	ae040	new buf size: 0
+03:20:19:487	ae040	ETH: 07/09/17-03:20:19 - New job from eu1.ethermine.org:4444
+03:20:19:488	ae040	target: 0x0000000112e0be82 (diff: 4000MH), epoch 133(2.04GB)
+03:20:19:490	ae040	ETH - Total Speed: 29.356 Mh/s, Total Shares: 3, Rejected: 0, Time: 00:07
+03:20:19:492	ae040	ETH: GPU0 29.356 Mh/s
+03:20:19:493	ae040	 DCR - Total Speed: 587.129 Mh/s, Total Shares: 25, Rejected: 1
+03:20:19:495	ae040	 DCR: GPU0 587.129 Mh/s
+03:20:21:902	afec0	GPU0 t=57C fan=52%
+03:20:21:903	afec0	em hbt: 0, dm hbt: 15, fm hbt: 109, 
+03:20:21:903	afec0	watchdog - thread 0 (gpu0), hb time 171
+03:20:21:903	afec0	watchdog - thread 1 (gpu0), hb time 15

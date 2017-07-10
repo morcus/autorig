@@ -1,0 +1,7 @@
+enable,name,hashrate,ethdual,power,powercost,fee,hardwarecost,whattomineid
+1,zcash,420,0,120,0.15,1,0,166
+1,eth,30.5,0,120,0.15,1,0,151
+1,eth_dcr,580,29.2,120,0.15,4,0,152
+1,eth_lbry,43,27,120,0.15,4,0,164
+1,eth_sia,470,28.4,120,0.15,4,0,161
+0,zcl,700,27,120,0.15,4,0,0

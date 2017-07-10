@@ -1,0 +1,1 @@
+miner --server eu1-zcash.flypool.org --port 3333 --user t1g5bTWdsaW41PJHenWWiem5WJFfBPk2LhZ.1070 --pass x --fee 0 --pec --cuda_devices 0 --intensity 64 --api 0.0.0.0:8000 --templimit 70 --eexit 3
